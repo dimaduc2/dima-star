@@ -1,26 +1,103 @@
-import React from 'react';
+import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import { Menu, Image, Dropdown, Checkbox, Icon } from 'semantic-ui-react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Gray_Jedi from './Gray_Jedi_(Jedi_&_Sith)_symbol.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from './Home';
+import Characters from './Characters';
+import Weapons from './Weapons';
+import About from './About';
+
+class App extends Component {
+
+  //2 State
+  state = {
+    dangXemGi: "dangXemHome",
+    activeItem: "",
+  }
+
+  //3 Function
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  bamHome = () => {
+    this.setState({dangXemGi:"dangXemHome", activeItem: "" });
+  }
+
+  doimau = () => {
+    if (this.state.light_or_dark === true) {
+      this.setState({light_or_dark: false});
+    }
+    else {
+      this.setState({light_or_dark: true});
+    }
+  }
+
+  //4 HTML và Component
+  render() {
+    const { activeItem, light_or_dark } = this.state    
+
+    return (
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App" style={{backgroundColor: light_or_dark ?'white' :'black', color: light_or_dark ?'black' :'white'}}>
+          <Menu borderless inverted>
+            <Menu.Item
+              name='home'
+              as={Link}
+              to="/"
+              active={activeItem === 'home'}
+              onClick={this.bamHome}
+            ><Image src={Gray_Jedi} size='mini' style={{marginRight: '10px'}} />Home
+            </Menu.Item>
+            
+            <Menu.Item
+              as={Link}
+              to="/Characters"
+              name='characters'
+              active={activeItem === 'characters'}
+              onClick={this.handleItemClick}
+            >Characters
+            </Menu.Item>
+
+            <Menu.Item
+              as={Link}
+              to="/Weapons"
+              name='weapons'
+              active={activeItem === 'weapons'}
+              onClick={this.handleItemClick}
+            >Weapons
+            </Menu.Item>
+
+            <Menu.Item
+              as={Link}
+              to="/About"
+              name='about'
+              active={activeItem === 'about'}
+              onClick={this.handleItemClick}
+            >About
+            </Menu.Item>
+
+            <Dropdown item icon='setting' simple>
+              <Dropdown.Menu>
+                <Dropdown.Item>
+                  <Icon name='adjust' />
+                  <Checkbox toggle onChange={this.doimau} style={{marginLeft:"5px", marginRight:"5px"}} />
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Menu>
+          <Route exact path = "/" component = {Home} />
+          <Route path = "/Weapons" component = {Weapons} />
+          <Route path = "/Characters" component = {Characters} />
+          <Route path = "/About" component = {About} />
+          <header className="App-header">
+            <img src={Gray_Jedi} className="App-logo" alt="logo" />
+            <p>Star Wars</p>
+          </header>
+        </div>
+      </Router>
+    );
+  }
 }
-
 export default App;
