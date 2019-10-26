@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import { Menu, Image, Dropdown, Checkbox, Icon } from 'semantic-ui-react'
+import { Menu, Image, Dropdown, Checkbox, Icon, Button } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Gray_Jedi from './Gray_Jedi_(Jedi_&_Sith)_symbol.png';
 
@@ -9,6 +9,8 @@ import Home from './Home';
 import Characters from './Characters';
 import Weapons from './Weapons';
 import About from './About';
+
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class App extends Component {
 
@@ -41,7 +43,11 @@ class App extends Component {
     return (
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App" style={{backgroundColor: light_or_dark ?'white' :'black', color: light_or_dark ?'black' :'white'}}>
-          <Menu borderless inverted>
+          <ScrollableAnchor id={'denTrenCung'}>
+            <div></div> 
+          </ScrollableAnchor>
+          
+          <Menu borderless inverted fixed='top'>
             <Menu.Item
               name='home'
               as={Link}
@@ -95,6 +101,9 @@ class App extends Component {
             <img src={Gray_Jedi} className="App-logo" alt="logo" />
             <p>Star Wars</p>
           </header>
+
+          <a href='#denTrenCung' className='nut-bam-len-tren'> <Icon bordered inverted color='teal' name='angle double up' /> </a>
+
         </div>
       </Router>
     );
