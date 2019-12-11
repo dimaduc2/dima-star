@@ -18,6 +18,7 @@ class About extends Component {
       <div className="About">
         
         <p>
+          <br/><br/><br/>
           Characters là gì?
           <br/>
           là danh sách của những người nào.
