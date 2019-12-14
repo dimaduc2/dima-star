@@ -89,6 +89,10 @@ class Movie extends Component {
     this.setState({dangXemAnhGioiThieu: true})
   }
 
+  giauAnh = () => {
+    this.setState({dangXemAnhGioiThieu: false})
+  }
+
   goiHello = ()=>{
     alert("hello")
   }
@@ -125,12 +129,8 @@ class Movie extends Component {
           ? null
           : <Iframe  url={danhBaPhimStarWars[soPhimDangXem].diaChi}
 
-
-
           width={widthPhim}
           height={heightPhim}
-          
-          
           
           id="myId"
           className="myClassname"
@@ -169,6 +169,7 @@ class Movie extends Component {
 
               <Button onClick={() => this.xemPhim(index)}
                       onMouseEnter={() => this.hienAnh(index)}
+                      onMouseLeave={this.giauAnh}
                 color = {soPhimDangXem === index ? "violet" : "purple" }>
                 <Image src={dangXemAnhGioiThieu && (index === soAnhDangXem)
                   ? danhBaPhimStarWars[index].anhGioiTieu

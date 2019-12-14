@@ -1,6 +1,6 @@
 //Phần 1: các Import
 import React, { Component } from 'react'
-import { Image, Grid } from 'semantic-ui-react'
+import { Image, Grid, Modal, Button } from 'semantic-ui-react'
 
 //import './Compare.css';
 
@@ -17,6 +17,7 @@ import Mara_Jade from './Jedi/Mara_Jade.jpg';
 import Ahsoka_Tano from './Jedi/Ahsoka_Tano.jpg';
 import Tahl from './Jedi/Tahl.jpg';
 import Obi_Wan from './Jedi/Obi-Wan_Kenobi_Jar_Kai.jpg';
+import Siri from './Jedi/Siri_Tachi.jpg';
 
 import Sith_Padme from './Sith/Sith_Padme.jpg';
 import Darth_Vader from './Sith/Darth_Vader.jpg';
@@ -24,6 +25,93 @@ import Darth_Maul from './Sith/Darth_Maul.jpg';
 import Savage_Opress from './Sith/Savage_Opress.jpg';
 import Aasajj_Ventress from './Sith/Aasajj_Ventress.jpg';
 import Komari_Vosa from './Sith/Komari_Vosa.jpg';
+
+const GREYJEDI  = [
+  {
+    name: 'Anakin Vader Skywalker Grey Jedi',
+    image: Anakin_Vader_Skywalker
+  },
+  {
+    name: 'Jolee Bindo',
+    image: Jolee_Bindo
+  },
+  {
+    name: 'Revan',
+    image: Revan
+  },
+  {
+    name: 'Galen Marek (Starkiller)',
+    image: Galen_Marek_Starkiller
+  },
+  {
+    name: 'Qui-Gon Jinn',
+    image: Qui_Gon_Jinn
+  },
+]
+
+const JEDI  = [
+  {
+    name: 'Anakin Skywalker',
+    image: Anakin_Skywalker
+  },
+  {
+    name: 'Leia Skywalker',
+    image: Leia_Skywalker
+  },
+  {
+    name: 'Luke Skywalker',
+    image: Luke_Skywalker
+  },
+  {
+    name: 'Mara Jade',
+    image: Mara_Jade
+  },
+  {
+    name: 'Ahsoka Tano',
+    image: Ahsoka_Tano
+  },
+  {
+    name: 'Tahl',
+    image: Tahl
+  },
+  {
+    name: 'Obi-Wan Kenobi',
+    image: Obi_Wan
+  },
+  {
+    name: 'Siri Tachi',
+    image: Siri
+  }
+]
+
+const SITH  = [
+  {
+    name: 'Darth Vader Sith',
+    image: Darth_Vader
+  },
+  {
+    name: 'Lady Senior Sith Padme',
+    image: Sith_Padme
+  },
+  {
+    name: 'Darth Maul',
+    image: Darth_Maul
+  },
+  {
+    name: 'Savage Opress',
+    image: Savage_Opress
+  },
+  {
+    name: 'Aasajj Ventress',
+    image: Aasajj_Ventress
+  },
+  {
+    name: 'Komari Vosa',
+    image: Komari_Vosa
+  }
+]
+
+
 
 class Characters extends Component {
 
@@ -42,84 +130,55 @@ class Characters extends Component {
           <Grid.Row>
             <Grid.Column><br/><br/><br/>
               <h1>Jedi</h1>
-              <Image src={Anakin_Skywalker} size='medium' />
-              <br/>
-              <p>Anakin Skywalker Jedi</p>
-              <br/><br/>
-              <Image src={Leia_Skywalker} size='medium' />
-              <br/>
-              <p>Leia Skywalker</p>
-              <br/><br/>
-              <Image src={Luke_Skywalker} size='medium' />
-              <br/>
-              <p>Luke Skywalker</p>
-              <br/><br/>
-              <Image src={Mara_Jade} size='medium' />
-              <br/>
-              <p>Mara Jade</p>
-              <br/><br/>
-              <Image src={Ahsoka_Tano} size='medium' />
-              <br/>
-              <p>Ahsoka Tano</p>
-              <br/><br/>
-              <Image src={Tahl} size='medium' />
-              <br/>
-              <p>Tahl</p>
-              <br/><br/>
-              <Image src={Obi_Wan} size='medium' />
-              <br/>
-              <p>Obi-Wan Kenobi Jar'Kai</p>
-              <br/><br/>
+              { JEDI.map( (moiJEDI, index) =>
+                <div>
+                  <Modal trigger={<Image src={moiJEDI.image} size='medium'/>} basic >
+                    <Modal.Content>
+                      <Image src={moiJEDI.image} size='big'/>
+                    </Modal.Content>
+                  </Modal>
+                  <br/>
+                  {moiJEDI.name}
+                  <br/><br/><br/><br/>
+                </div>
+                )
+              }
             </Grid.Column>
+            
             <Grid.Column><br/><br/><br/>
               <h1>Grey Jedi</h1>
-              <Image src={Anakin_Vader_Skywalker} size='medium' />
-              <br/>
-              <p>Anakin Vader Skywalker Grey Jedi</p>
-              <br/><br/>
-              <Image src={Jolee_Bindo} size='medium' />
-              <br/>
-              <p>Jolee Bindo</p>
-              <br/><br/>
-              <Image src={Revan} size='medium' />
-              <br/>
-              <p>Revan</p>
-              <br/><br/>
-              <Image src={Galen_Marek_Starkiller} size='medium' />
-              <br/>
-              <p>Galen Marek (Starkiller)</p>
-              <br/><br/>
-              <Image src={Qui_Gon_Jinn} size='medium' />
-              <br/>
-              <p>Qui-Gon Jinn</p>
-              <br/><br/>
+              { GREYJEDI.map( (moiGREYJEDI, index) =>
+                <div>
+                  <Modal trigger={<Image src={moiGREYJEDI.image} size='medium'/>} basic >
+                    <Modal.Content>
+                      <Image src={moiGREYJEDI.image} size='big'/>
+                    </Modal.Content>
+                  </Modal>
+                  <br/>
+                  {moiGREYJEDI.name}
+                  <br/><br/><br/><br/>
+                </div>
+                )
+              }
             </Grid.Column>
+
+
+
             <Grid.Column><br/><br/><br/>
               <h1>Sith</h1>
-              <Image src={Darth_Vader} size='medium' />
-              <br/>
-              <p>Darth Vader Sith</p>
-              <br/><br/>
-              <Image src={Sith_Padme} size='medium' />
-              <br/>
-              <p>Lady Senior Sith Padme</p>
-              <br/><br/>
-              <Image src={Darth_Maul} size='medium' />
-              <br/>
-              <p>Darth Maul</p>
-              <br/><br/>
-              <Image src={Savage_Opress} size='medium' />
-              <br/>
-              <p>Savage Opress</p>
-              <br/><br/>
-              <Image src={Aasajj_Ventress} size='medium' />
-              <br/>
-              <p>Aasajj Ventress</p>
-              <br/><br/>
-              <Image src={Komari_Vosa} size='medium' />
-              <br/>
-              <p>Komari Vosa</p>
-              <br/><br/>
+              { SITH.map( (moiSITH, index) =>
+                <div>
+                  <Modal trigger={<Image src={moiSITH.image} size='medium'/>} basic >
+                    <Modal.Content>
+                      <Image src={moiSITH.image} size='big'/>
+                    </Modal.Content>
+                  </Modal>
+                  <br/>
+                  {moiSITH.name}
+                  <br/><br/><br/><br/>
+                </div>
+                )
+              }
             </Grid.Column>
           </Grid.Row>
         </Grid>
