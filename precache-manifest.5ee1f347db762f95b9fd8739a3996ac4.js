@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44ac7d441c48b94c4776d2b42156dbd3",
+    "revision": "80102425980367480871c0cad885a1f2",
     "url": "/dima-star/index.html"
   },
   {
-    "revision": "eed75500dd50bb17a1de",
+    "revision": "4574d6fa1642082dd6bb",
     "url": "/dima-star/static/css/2.3e421ff8.chunk.css"
   },
   {
-    "revision": "198d92636563761bdac7",
+    "revision": "eff4be27fe249c6ca664",
     "url": "/dima-star/static/css/main.cb0921db.chunk.css"
   },
   {
-    "revision": "eed75500dd50bb17a1de",
-    "url": "/dima-star/static/js/2.d583204f.chunk.js"
+    "revision": "4574d6fa1642082dd6bb",
+    "url": "/dima-star/static/js/2.e61b1bbb.chunk.js"
   },
   {
-    "revision": "198d92636563761bdac7",
-    "url": "/dima-star/static/js/main.94f7d1fe.chunk.js"
+    "revision": "eff4be27fe249c6ca664",
+    "url": "/dima-star/static/js/main.9993f6ef.chunk.js"
   },
   {
     "revision": "5b654f7d3d12355f9702",
@@ -81,7 +81,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "a115a70714b64ef603dba85c9a3bad56",
-    "url": "/dima-star/static/media/DRK-1 (Sith Probe Droid SFB).a115a707.jpg"
+    "url": "/dima-star/static/media/DRK-1 x3 (Sith Probe Droid SFB).a115a707.jpg"
   },
   {
     "revision": "7a98e7f85ee381aa2ed48af55570695a",
@@ -102,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4f17cde9a6b82923acfd1b78b79b2dfe",
     "url": "/dima-star/static/media/HK-47.4f17cde9.jpg"
+  },
+  {
+    "revision": "0e7c6cbd61084a5ee6319362035fc1c1",
+    "url": "/dima-star/static/media/ID10 seeker droid x3.0e7c6cbd.jpg"
   },
   {
     "revision": "7b9b625d26f46bd2c0ace8c1ad95cd82",
@@ -190,6 +194,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "05ba2845275c1667820d67afa716596e",
     "url": "/dima-star/static/media/Savage_Opress.05ba2845.jpg"
+  },
+  {
+    "revision": "f00ac0783839f481c244d8c41b27ce3e",
+    "url": "/dima-star/static/media/Siri_Tachi.f00ac078.jpg"
   },
   {
     "revision": "a9446d3fcdc3e4b27512c2ac67c23721",
