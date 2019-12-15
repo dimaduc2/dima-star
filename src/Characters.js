@@ -23,7 +23,7 @@ import Sith_Padme from './Sith/Sith_Padme.jpg';
 import Darth_Vader from './Sith/Darth_Vader.jpg';
 import Darth_Maul from './Sith/Darth_Maul.jpg';
 import Savage_Opress from './Sith/Savage_Opress.jpg';
-import Aasajj_Ventress from './Sith/Aasajj_Ventress.jpg';
+import Asajj_Ventress from './Sith/Asajj_Ventress.jpg';
 import Komari_Vosa from './Sith/Komari_Vosa.jpg';
 
 const GREYJEDI  = [
@@ -102,8 +102,8 @@ const SITH  = [
     image: Savage_Opress
   },
   {
-    name: 'Aasajj Ventress',
-    image: Aasajj_Ventress
+    name: 'Asajj Ventress',
+    image: Asajj_Ventress
   },
   {
     name: 'Komari Vosa',

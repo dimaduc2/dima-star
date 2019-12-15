@@ -18,7 +18,7 @@ import Model_88 from './Anakin Droid/Model-88 or M88-AD (The Dark Lord of Naboo)
 import PROXY from './Anakin Droid/PROXY.jpg';
 import R1_G4 from './Anakin Droid/R1-G4 (The Dark Lord of Naboo).jpg';
 import R2_D2 from './Anakin Droid/R2-D2 (Artoo-Detoo) (call Artoo).jpg';
-import R4_G4 from './Anakin Droid/R4-G4.jpg';
+import R4_P22 from './Anakin Droid/R4-P22 (R4-G4).jpg';
 import R4_P44 from './Anakin Droid/R4-P44 (Petey).jpg';
 import DRK_1 from './Anakin Droid/DRK-1 x3 (Sith Probe Droid SFB).jpg';
 import ID_10 from './Anakin Droid/ID10 seeker droid x3.jpg';
@@ -69,8 +69,8 @@ const Droid = [
     image: R2_D2
   }, 
   {
-    name: 'R4-G4',
-    image: R4_G4
+    name: 'R4-P22',
+    image: R4_P22
   }, 
   {
     name: 'R4-P44',

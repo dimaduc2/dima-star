@@ -13,6 +13,7 @@ import Movie from './Movie';
 import Comic from './Comic';
 import Anakin_Side from './Anakin Side';
 import Robot from './Robot';
+import Ship from './Ship';
 import About from './About';
 
 import ScrollableAnchor from 'react-scrollable-anchor'
@@ -152,6 +153,32 @@ class App extends Component {
                   : 'white'}}> 
               {language === 'en'
                 ? "Weapons"
+                : "Vũ khí"
+              }
+            </Menu.Item>
+
+            <Menu.Item
+              as={Link}
+              to="/Ship"
+              name='ship'
+              // active={activeItem === 'weapons'}
+              onClick={this.handleItemClick}
+              style={{backgroundColor: activeItem !== 'ship'
+              ?'transparent'
+              :  side === 'sith'
+                ? '#b30000'
+                : side === 'jedi'
+                  ? 'blue'
+                  : 'white',
+              color: activeItem === 'ship'
+              ?'black'
+              : side === 'sith'
+                ? 'red'
+                : side === 'jedi'
+                  ? 'blue'
+                  : 'white'}}> 
+              {language === 'en'
+                ? "Ship"
                 : "Vũ khí"
               }
             </Menu.Item>
@@ -336,6 +363,7 @@ class App extends Component {
           </Menu>
           <Route exact path = "/" component = {Home} />
           <Route path = "/Weapons" component = {Weapons} />
+          <Route path = "/Ship" component = {Ship} />
           <Route path = "/Characters" component = {Characters} />
           <Route path = "/Movie" component = {Movie} />
           <Route path = "/Comic" component = {Comic} />

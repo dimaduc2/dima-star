@@ -59,6 +59,9 @@ class Comic extends Component {
             ? <AnakinPast />
             : <AnakinJediPadmeSith />
           }
+          
+          <a href='#ko-di-dau' className='nut-chon-truyen'> <Icon bordered inverted color='red' name='file alternate' /> </a>
+
       </div>
     )
   }
