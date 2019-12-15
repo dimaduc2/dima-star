@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80102425980367480871c0cad885a1f2",
+    "revision": "5e9755e4370e1c476b7d013042e3371e",
     "url": "/dima-star/index.html"
   },
   {
-    "revision": "4574d6fa1642082dd6bb",
+    "revision": "110d89e3304ffb85dc3c",
     "url": "/dima-star/static/css/2.3e421ff8.chunk.css"
   },
   {
-    "revision": "eff4be27fe249c6ca664",
-    "url": "/dima-star/static/css/main.cb0921db.chunk.css"
+    "revision": "ad0311ab6a0437e252f7",
+    "url": "/dima-star/static/css/main.74f2b5e1.chunk.css"
   },
   {
-    "revision": "4574d6fa1642082dd6bb",
-    "url": "/dima-star/static/js/2.e61b1bbb.chunk.js"
+    "revision": "110d89e3304ffb85dc3c",
+    "url": "/dima-star/static/js/2.1b1c10fe.chunk.js"
   },
   {
-    "revision": "eff4be27fe249c6ca664",
-    "url": "/dima-star/static/js/main.9993f6ef.chunk.js"
+    "revision": "ad0311ab6a0437e252f7",
+    "url": "/dima-star/static/js/main.85981bcf.chunk.js"
   },
   {
     "revision": "5b654f7d3d12355f9702",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c0dca0d94c0f1f82cbd7e21032e4835d",
     "url": "/dima-star/static/media/ASP-7 x10 (The Dark Lord of Naboo).c0dca0d9.jpg"
-  },
-  {
-    "revision": "8e0fbf2d794017b968252f9333e1e87d",
-    "url": "/dima-star/static/media/Aasajj_Ventress.8e0fbf2d.jpg"
   },
   {
     "revision": "9270c286654112248095d51ee4801c16",
@@ -56,12 +52,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/media/Anakin_Vader_Skywalker.5cc02254.jpg"
   },
   {
+    "revision": "8e0fbf2d794017b968252f9333e1e87d",
+    "url": "/dima-star/static/media/Asajj_Ventress.8e0fbf2d.jpg"
+  },
+  {
+    "revision": "6d8aac6e3908856b92d316a5c8dd9e24",
+    "url": "/dima-star/static/media/Azure Angel for R4-P22.6d8aac6e.jpg"
+  },
+  {
     "revision": "740fe80d97324776d6adc4b5d7df9931",
     "url": "/dima-star/static/media/BT-1.740fe80d.jpg"
   },
   {
     "revision": "fbebc4d00958f0abbbf5e8988a44aef5",
     "url": "/dima-star/static/media/C-3PO (See-Threepio) (call Threepio).fbebc4d0.jpg"
+  },
+  {
+    "revision": "0b4ae1459059cbd327c000eebbceb5f3",
+    "url": "/dima-star/static/media/CC-9600 Frigate-Class.0b4ae145.jpg"
   },
   {
     "revision": "9959191031b9e85b491ae2db08c71d19",
@@ -92,6 +100,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/media/Darth_Vader.27e888a8.jpg"
   },
   {
+    "revision": "f925ebf5a99dd028ccd229429e7a9cf0",
+    "url": "/dima-star/static/media/Delta-7B for R2-D2.f925ebf5.jpg"
+  },
+  {
+    "revision": "d5b135d964bdb33ea88a432ce11dcaf1",
+    "url": "/dima-star/static/media/Eta-2 for R2-D2.d5b135d9.jpg"
+  },
+  {
     "revision": "3c6104063323e6c4fb2b2adab4c6884e",
     "url": "/dima-star/static/media/Galen_Marek_(Starkiller).3c610406.jpg"
   },
@@ -118,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5c8f3d183fab336077cb2836f09eb6a7",
     "url": "/dima-star/static/media/KYLO REN VS. DARTH VADER IN REAL LIFE.5c8f3d18.jpg"
+  },
+  {
+    "revision": "a11e6c7cd38ebd0e2d220847d20dd430",
+    "url": "/dima-star/static/media/Kappa-Class (Susanoo).a11e6c7c.jpg"
   },
   {
     "revision": "76198e723113b5db8236b141ebc7eeea",
@@ -173,7 +193,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "5634022c31cb0e41bdca69c99e4ae80a",
-    "url": "/dima-star/static/media/R4-G4.5634022c.jpg"
+    "url": "/dima-star/static/media/R4-P22 (R4-G4).5634022c.jpg"
   },
   {
     "revision": "787dcda2890e4aa8cb2c0e84159bd4ff",
@@ -198,6 +218,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f00ac0783839f481c244d8c41b27ce3e",
     "url": "/dima-star/static/media/Siri_Tachi.f00ac078.jpg"
+  },
+  {
+    "revision": "8c35b194881c8acadb14874931a76926",
+    "url": "/dima-star/static/media/Sith Dreadnought-Class (Leviathan).8c35b194.jpg"
+  },
+  {
+    "revision": "d4304310110b1f2dccaad5e7a061f300",
+    "url": "/dima-star/static/media/Sith Infiltrator.d4304310.jpg"
   },
   {
     "revision": "a9446d3fcdc3e4b27512c2ac67c23721",
