@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e9755e4370e1c476b7d013042e3371e",
+    "revision": "c66ef7ea35d46a5c6df4fe83c73a907b",
     "url": "/dima-star/index.html"
   },
   {
-    "revision": "110d89e3304ffb85dc3c",
+    "revision": "3b9e6832b8df6537ed03",
     "url": "/dima-star/static/css/2.3e421ff8.chunk.css"
   },
   {
-    "revision": "ad0311ab6a0437e252f7",
-    "url": "/dima-star/static/css/main.74f2b5e1.chunk.css"
+    "revision": "2592aa485f57500b9824",
+    "url": "/dima-star/static/css/main.88289cc6.chunk.css"
   },
   {
-    "revision": "110d89e3304ffb85dc3c",
-    "url": "/dima-star/static/js/2.1b1c10fe.chunk.js"
+    "revision": "3b9e6832b8df6537ed03",
+    "url": "/dima-star/static/js/2.6d77e29c.chunk.js"
   },
   {
-    "revision": "ad0311ab6a0437e252f7",
-    "url": "/dima-star/static/js/main.85981bcf.chunk.js"
+    "revision": "2592aa485f57500b9824",
+    "url": "/dima-star/static/js/main.1685584d.chunk.js"
   },
   {
     "revision": "5b654f7d3d12355f9702",
     "url": "/dima-star/static/js/runtime-main.ad014889.js"
-  },
-  {
-    "revision": "3ede0173935c629f21a817f0355f93e6",
-    "url": "/dima-star/static/media/0-0-0 or Triple-Zero.3ede0173.jpg"
   },
   {
     "revision": "c0dca0d94c0f1f82cbd7e21032e4835d",
@@ -58,10 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6d8aac6e3908856b92d316a5c8dd9e24",
     "url": "/dima-star/static/media/Azure Angel for R4-P22.6d8aac6e.jpg"
-  },
-  {
-    "revision": "740fe80d97324776d6adc4b5d7df9931",
-    "url": "/dima-star/static/media/BT-1.740fe80d.jpg"
   },
   {
     "revision": "fbebc4d00958f0abbbf5e8988a44aef5",
@@ -104,12 +96,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/media/Delta-7B for R2-D2.f925ebf5.jpg"
   },
   {
+    "revision": "697e33962640f5c853c808180f6ba2b3",
+    "url": "/dima-star/static/media/Eta-2 green for R2-D2.697e3396.jpg"
+  },
+  {
     "revision": "d5b135d964bdb33ea88a432ce11dcaf1",
-    "url": "/dima-star/static/media/Eta-2 for R2-D2.d5b135d9.jpg"
+    "url": "/dima-star/static/media/Eta-2 yellow for R2-D2.d5b135d9.jpg"
+  },
+  {
+    "revision": "3ede0173935c629f21a817f0355f93e6",
+    "url": "/dima-star/static/media/G7-68 (The Sith Apprentice) (for 0-0-0 or Triple-Zero).3ede0173.jpg"
   },
   {
     "revision": "3c6104063323e6c4fb2b2adab4c6884e",
     "url": "/dima-star/static/media/Galen_Marek_(Starkiller).3c610406.jpg"
+  },
+  {
+    "revision": "87e5b2f385c179440657a09560087f87",
+    "url": "/dima-star/static/media/Ginivex-Class Starfighter.87e5b2f3.jpg"
   },
   {
     "revision": "c4a34dfe87d871a3b3c4cc438c8eaef2",
@@ -122,6 +126,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e7c6cbd61084a5ee6319362035fc1c1",
     "url": "/dima-star/static/media/ID10 seeker droid x3.0e7c6cbd.jpg"
+  },
+  {
+    "revision": "2bbda06388c48f621cfb234a4ebcab3d",
+    "url": "/dima-star/static/media/Iron Vader (for BT-1).2bbda063.jpg"
   },
   {
     "revision": "7b9b625d26f46bd2c0ace8c1ad95cd82",
@@ -244,6 +252,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/media/Symbol Sith.ad9bef92.png"
   },
   {
+    "revision": "b902216fcf648147ac82aa7d9a2beff0",
+    "url": "/dima-star/static/media/T3-M4.b902216f.jpg"
+  },
+  {
+    "revision": "2c79c8403ab2ea6b3d891597127f5f5f",
+    "url": "/dima-star/static/media/T7-O1.2c79c840.jpg"
+  },
+  {
     "revision": "0430331b2e63ce822c82d4ea0bd91ca3",
     "url": "/dima-star/static/media/Tahl.0430331b.jpg"
   },
@@ -258,6 +274,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a317be3adf829083f5e829ec5a21f355",
     "url": "/dima-star/static/media/Westar-35.a317be3a.jpg"
+  },
+  {
+    "revision": "e28dc82e32d2cbf975d2226282d68a54",
+    "url": "/dima-star/static/media/X2-C3.e28dc82e.jpg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
