@@ -7,7 +7,7 @@ import RevanStarWarsFanFilm from './image movie/Revan - Star Wars Fan Film (2015
 import SkywalkerApprentice from './image movie/SKYWALKER APPRENTICE (2019 Star Wars Fan Film).jpg'
 import StarWarsCloneWars2003 from './image movie/Star Wars Clone Wars 2003 Full SS1 - SS2.jpg'
 
-// import './Compare.css';
+import './Movie.css';
 
 const danhBaPhimStarWars = [
   {
@@ -61,7 +61,7 @@ class Movie extends Component {
 
 
     widthPhim: '450px',
-    heightPhim: '150px'
+    heightPhim: '250px'
   }
 
   // Phần 3: các Function  
@@ -139,9 +139,6 @@ class Movie extends Component {
           allowFullScreen/>}
 
         <br/><br/>
-        <Button circular icon='search plus' onClick={this.phimTo}></Button>
-        <Button circular icon='search minus' onClick={this.phimNho}></Button>
-        <br/><br/>
 
         <p onClick={this.goiHello}>hello</p>
 
@@ -183,6 +180,10 @@ class Movie extends Component {
           </Grid.Row>
         </Grid>
 
+        <br/><br/>
+        <Button color='red' circular icon='search minus' onClick={this.phimNho} className="nut-phong-nho"></Button>
+      
+        <Button color='blue' circular icon='search plus' onClick={this.phimTo} className="nut-phong-to"></Button>
       
 
         {/* {danhBaPhimStarWars.map(

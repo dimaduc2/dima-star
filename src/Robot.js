@@ -4,15 +4,17 @@
 //Phần 1: các Import
 import React, { Component } from 'react'
 import './App.css';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Image, Modal } from 'semantic-ui-react';
 
-
+import Iron_Vader from './Anakin Droid/Iron Vader (for BT-1).jpg';
 import ASP_7 from './Anakin Droid/ASP-7 x10 (The Dark Lord of Naboo).jpg';
-import Triple_Zero from './Anakin Droid/0-0-0 or Triple-Zero.jpg';
-import BT_1 from './Anakin Droid/BT-1.jpg';
+import G7_68 from './Anakin Droid/G7-68 (The Sith Apprentice) (for 0-0-0 or Triple-Zero).jpg';
 import C_3PO from './Anakin Droid/C-3PO (See-Threepio) (call Threepio).jpg';
 import Cam from './Anakin Droid/Cam droid (Orbie).jpg';
 import HK_7 from './Anakin Droid/HK-47.jpg';
+import T3_M4 from './Anakin Droid/T3-M4.jpg';
+import T7_O1 from './Anakin Droid/T7-O1.jpg';
+import X2_C3 from './Anakin Droid/X2-C3.jpg';
 import J9 from './Anakin Droid/J9 (The Dark Lord of Naboo).jpg';
 import Model_88 from './Anakin Droid/Model-88 or M88-AD (The Dark Lord of Naboo).jpg';
 import PROXY from './Anakin Droid/PROXY.jpg';
@@ -25,28 +27,24 @@ import ID_10 from './Anakin Droid/ID10 seeker droid x3.jpg';
 
 const Droid = [
   {
-    name: 'ASP-7 x10',
-    image: ASP_7
-  },
-  {
-    name: 'Triple Zero (0-0-0)',
-    image: Triple_Zero
+    name: 'HK-7 (for Revan)',
+    image: HK_7
   }, 
   {
-    name: 'BT 1',
-    image: BT_1
+    name: 'T3-M4 (for Jolee)',
+    image: T3_M4
+  }, 
+  {
+    name: 'T7-O1 (for Jolee)',
+    image: T7_O1
+  }, 
+  {
+    name: 'X2-C3 (for Jolee)',
+    image: X2_C3
   }, 
   {
     name: 'C-3PO',
     image: C_3PO
-  }, 
-  {
-    name: 'Cam',
-    image: Cam
-  }, 
-  {
-    name: 'HK 7',
-    image: HK_7
   }, 
   {
     name: 'J9',
@@ -57,31 +55,47 @@ const Droid = [
     image: Model_88
   }, 
   {
+    name: 'R1-G4',
+    image: R1_G4
+  }, 
+  {
+    name: 'ASP-7 x10',
+    image: ASP_7
+  },
+  {
     name: 'PROXY',
     image: PROXY
   }, 
   {
-    name: 'R1-G4',
-    image: R1_G4
+    name: 'G7-68 (doctor) (for 0-0-0 or Triple-Zero)',
+    image: G7_68
+  }, 
+  {
+    name: 'Iron Vader (for BT-1)',
+    image: Iron_Vader
   }, 
   {
     name: 'R2-D2',
     image: R2_D2
   }, 
   {
-    name: 'R4-P22',
-    image: R4_P22
+    name: 'Cam',
+    image: Cam
   }, 
   {
     name: 'R4-P44',
     image: R4_P44
   }, 
   {
-    name: 'DRK-1 x3',
+    name: 'R4-P22',
+    image: R4_P22
+  }, 
+  {
+    name: 'DRK-1 x3 (for Dark Maul)',
     image: DRK_1
   },
   {
-    name: 'ID10 x3',
+    name: 'ID10 x3 (for Seventh Sister ID9)',
     image: ID_10
   }
 ]
@@ -98,24 +112,27 @@ class Robot extends Component {
     //const {  } = this.state
 
     return (
-      <div className="Robot" align='center'>
+      <div className="Robot" textAlign='center'>
         <p>
           <br/><br/><br/><br/>
+          <h1>Anakin's 31 droid</h1>
+          <br/>
           <Grid columns={3} divided>
             { Droid.map( (moiRobot, index) =>
-              <Grid.Column>
-                <Image src={moiRobot.image} size='medium'/>
+              <div>
+                <Modal trigger={<Image src={moiRobot.image} size='medium'/>} basic >
+                  <Modal.Content>
+                    <Image src={moiRobot.image} size='big'/>
+                  </Modal.Content>
+                </Modal>
                 <br/>
                 {moiRobot.name}
-              </Grid.Column>)
+              </div>
+              )
             }
           </Grid>
-
-
-          
           <br/>
         </p>
-        
       </div>
     )
   }

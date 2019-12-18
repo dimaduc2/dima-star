@@ -33,34 +33,91 @@ class Comic extends Component {
 
   //Phần 2: các State
   state = {
-    truyen: 'ChoiceOneGreyJedi'
+    truyen: 'ChoiceOneGreyJedi',
+    dangMoMenuTruyen: true
   }
 
   //Phần 3: các Function
   chonTruyen  = (e, {value}) => {
     this.setState({truyen: value })
   }
+  chonTruyenMenu = () => {
+    if (this.state.dangMoMenuTruyen === false) {
+      this.setState({dangMoMenuTruyen: true});
+    }
+    else {
+      this.setState({dangMoMenuTruyen: false});
+    }
+  }
+
+
+
+
   render() {
-    const { truyen } = this.state
+    const { truyen, dangMoMenuTruyen } = this.state
 
     return (
       <div className="Comic" align="left" >
         <br/><br/><br/><br/><br/><br/>
-          <Dropdown
-            placeholder='Truyen Star Wars'
-            fluid
-            selection
-            options={chonTruyenStarWars}
-            onChange={this.chonTruyen}
-          />
-          {truyen === 'ChoiceOneGreyJedi'
-          ? <ChoiceOneGreyJedi />
-          : truyen === 'AnakinPast'
-            ? <AnakinPast />
-            : <AnakinJediPadmeSith />
-          }
-          
-          <a href='#ko-di-dau' className='nut-chon-truyen'> <Icon bordered inverted color='red' name='file alternate' /> </a>
+        <Dropdown
+          placeholder='Truyen Star Wars'
+          fluid
+          selection
+          options={chonTruyenStarWars}
+          onChange={this.chonTruyen}
+        />
+
+        {dangMoMenuTruyen === false
+        ? <Menu vertical className="MenuDoc">
+            <Menu.Item as='a' href='#OnceUponATime'>
+              Once upon a time
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#movie1'>
+              Movie 1
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#movie2'>
+              Movie 2
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#movieCloneWars2003Volume1'>
+              Movie Clone Wars (2003) - Volume 1
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#starWarsCloneWarsManga'>
+              Star Wars: Clone Wars manga
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#starWarsTheCloneWarsMovie2008Unknown'>
+              Star Wars The Clone Wars Movie 2008 (Unknown)
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#movieStarWarsTheCloneWarsTVSeries2008_2015Unknown'>
+              Movie Star Wars: The Clone Wars (TV Series 2008–2015) (Unknown)
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#movieCloneWars2003Volume2'>
+              Movie Clone Wars (2003) - Volume 2
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#movie3'>
+              Movie 3
+            </Menu.Item>
+          </Menu>
+        : null
+        }
+
+        {truyen === 'ChoiceOneGreyJedi'
+        ? <ChoiceOneGreyJedi />
+        : truyen === 'AnakinPast'
+          ? <AnakinPast />
+          : <AnakinJediPadmeSith />
+        }
+
+        <a onClick={this.chonTruyenMenu} href="#ko-dung" className='nut-chon-truyen'> 
+        <Icon bordered inverted color='red' name='file alternate' /> 
+        </a>
 
       </div>
     )
@@ -73,17 +130,19 @@ const AnakinJediPadmeSith = () => {
   return (
     <div className="Comic-margin">
       <h1>Anakin (Jedi) x Padme (Sith)</h1>
-      <Button style ={{margin: '5px'}}><a href='#movie1'>Movie 1</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#movie2'>Movie 2</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#movieCloneWars2003Volume1'>Movie Clone Wars 2003 Volume1</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#starWarsCloneWarsManga'>Star Wars Clone Wars Manga</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#starWarsTheCloneWarsMovie2008Unknown'>Star Wars The Clone Wars Movie 2008 Unknown</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#movieStarWarsTheCloneWarsTVSeries2008_2015Unknown'>Movie StarWars The CloneWars TV Series 2008-2015 Unknown</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#movieCloneWars2003Volume2'>Movie CloneWars 2003 Volume 2</a></Button>
-      <Button style ={{margin: '5px'}}><a href='#movie3'>Movie 3</a></Button>
-      <br/><br/><br/>
-      <div><AnakinJediPadmeSith_OnceUponATime /></div>
-      <br/><br/><br/>
+      <Button style={{margin: '5px'}}><a href='#movie1'>Movie 1</a></Button>
+      <Button style={{margin: '5px'}}><a href='#movie2'>Movie 2</a></Button>
+      <Button style={{margin: '5px'}}><a href='#movieCloneWars2003Volume1'>Movie Clone Wars 2003 Volume1</a></Button>
+      <Button style={{margin: '5px'}}><a href='#starWarsCloneWarsManga'>Star Wars Clone Wars Manga</a></Button>
+      <Button style={{margin: '5px'}}><a href='#starWarsTheCloneWarsMovie2008Unknown'>Star Wars The Clone Wars Movie 2008 Unknown</a></Button>
+      <Button style={{margin: '5px'}}><a href='#movieStarWarsTheCloneWarsTVSeries2008_2015Unknown'>Movie StarWars The CloneWars TV Series 2008-2015 Unknown</a></Button>
+      <Button style={{margin: '5px'}}><a href='#movieCloneWars2003Volume2'>Movie CloneWars 2003 Volume 2</a></Button>
+      <Button style={{margin: '5px'}}><a href='#movie3'>Movie 3</a></Button>
+
+      <ScrollableAnchor id={'OnceUponATime'}>
+        <div></div> 
+      </ScrollableAnchor>
+      <br/><br/><br/><div><AnakinJediPadmeSith_OnceUponATime /></div><br/><br/><br/>
 
       <ScrollableAnchor id={'movie1'}>
         <div></div> 
@@ -158,9 +217,11 @@ const ChoiceOneGreyJedi = () => {
       <Button onClick={MovieStarWarsTheCloneWarsTVSeries2008_2015Unknown} style ={{margin: '5px'}}><a href='#movieStarWarsTheCloneWarsTVSeries2008_2015Unknown'>Movie StarWars The CloneWars TV Series 2008-2015 Unknown</a></Button>
       <Button onClick={MovieCloneWars2003Volume2} style ={{margin: '5px'}}><a href='#movieCloneWars2003Volume2'>Movie CloneWars 2003 Volume 2</a></Button>
       <Button onClick={Movie3} style ={{margin: '5px'}}><a href='#movie3'>Movie 3</a></Button>
-      <br/><br/><br/>
-      <div><ChoiceOneGreyJedi_OnceUponATime /></div>
-      <br/><br/><br/>
+      
+      <ScrollableAnchor id={'OnceUponATime'}>
+        <div></div> 
+      </ScrollableAnchor>
+      <br/><br/><br/><div><ChoiceOneGreyJedi_OnceUponATime /></div><br/><br/><br/>
 
       <ScrollableAnchor id={'movie1'}>
         <div></div> 
@@ -1252,6 +1313,7 @@ const AnakinPast_OnceUponATime = () => {
 const AnakinJediPadmeSith_OnceUponATime = () => {
   return (
     <div>
+      <h1>Once upon a time</h1>
       <p>Ở hành tinh Tatooine có bão cát và có cậu bé Anakin 8 tuổi chạy vào hang khỏi bão cát để chờ bão cát tan, sau đó cậu bé Anakin thấy cô gái cầm kiếm vàng 2 đầu. Cô gái hỏi tội cậu bé Anakin:</p>
       <ul>
         <li>Mi là ai mà sao mi lại trong hang của ta?</li>

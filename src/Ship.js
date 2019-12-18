@@ -7,9 +7,11 @@ import Sith_Infiltrator from './Ship/Sith Infiltrator.jpg';
 import Frigate_Class from './Ship/CC-9600 Frigate-Class.jpg';
 import Azure_Angel from './Ship/Azure Angel for R4-P22.jpg';
 import Delta_7B from './Ship/Delta-7B for R2-D2.jpg';
-import Eta_2 from './Ship/Eta-2 for R2-D2.jpg';
+import Ginivex_Class_Starfighter from './Ship/Ginivex-Class Starfighter.jpg';
+import Eta_2_yellow from './Ship/Eta-2 yellow for R2-D2.jpg';
+import Eta_2_green from './Ship/Eta-2 green for R2-D2.jpg';
 
-import { Image, Modal } from 'semantic-ui-react'
+import { Image, Modal, Grid } from 'semantic-ui-react'
 
 const SHIP  = [
   {
@@ -25,20 +27,28 @@ const SHIP  = [
     image: Frigate_Class
   },
   {
-    name: 'Sith Infiltrator',
+    name: 'Sith Infiltrator (for Dark Maul)',
     image: Sith_Infiltrator
   },
   {
-    name: 'Azure Angel for R4-P22',
+    name: 'Azure Angel with R4-P22 (for Delta-7 Red with R4-P22)',
     image: Azure_Angel
   },
   {
-    name: 'Delta-7B for R2-D2',
+    name: 'Delta-7B with R2-D2',
     image: Delta_7B
   },
   {
-    name: 'Eta-2 for R2-D2',
-    image: Eta_2
+    name: 'Eta-2 yellow with R2-D2',
+    image: Eta_2_yellow
+  },
+  {
+    name: 'Eta-2 green with R4-P44',
+    image: Eta_2_green
+  },
+  {
+    name: 'Ginivex-Class Starfighter (for Asajj)',
+    image: Ginivex_Class_Starfighter
   },
   
 ]
@@ -58,9 +68,9 @@ class Weapons extends Component {
     return (
       <div className="Weapons" align="center">
         <br/><br/><br/><br/><br/>
-
-
-          <h1>Grey Jedi</h1>
+        <h1>Anakin's Ship</h1>
+        <br/>
+        <Grid columns={3} textAlign="center">
           { SHIP.map( (moiSHIP, index) =>
             <div>
               <Modal trigger={<Image src={moiSHIP.image} size='medium'/>} basic >
@@ -74,6 +84,7 @@ class Weapons extends Component {
             </div>
             )
           }
+        </Grid>
 
         {/* <Image src={Sith_Dreadnought_Class} size='medium' />
         <br/>

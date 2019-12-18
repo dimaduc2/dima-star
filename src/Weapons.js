@@ -31,6 +31,8 @@ class Weapons extends Component {
     return (
       <div className="Weapons" align="center">
         <br/><br/><br/><br/><br/>
+        <h1>Anakin's weapons</h1>
+        <br/>
         <Image src={LightsaberKrayt} size='medium' />
         <br/>
         <p>Lightsaber Krayt Dragon</p>

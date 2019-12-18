@@ -16,3 +16,13 @@
   bottom: 60px;
   right: 20px;
 }
+
+.MenuDoc {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+}
+
+.nut-chon-truyen {
+  position: fixed;
+}
