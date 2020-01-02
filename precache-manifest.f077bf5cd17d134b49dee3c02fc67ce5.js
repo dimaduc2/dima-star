@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c66ef7ea35d46a5c6df4fe83c73a907b",
+    "revision": "54d405aef09b434226f16c42956fe538",
     "url": "/dima-star/index.html"
   },
   {
-    "revision": "3b9e6832b8df6537ed03",
+    "revision": "f4f500a231c81f20dd98",
     "url": "/dima-star/static/css/2.3e421ff8.chunk.css"
   },
   {
-    "revision": "2592aa485f57500b9824",
-    "url": "/dima-star/static/css/main.88289cc6.chunk.css"
+    "revision": "f8829dfce59215191411",
+    "url": "/dima-star/static/css/main.1b5a2dbb.chunk.css"
   },
   {
-    "revision": "3b9e6832b8df6537ed03",
-    "url": "/dima-star/static/js/2.6d77e29c.chunk.js"
+    "revision": "f4f500a231c81f20dd98",
+    "url": "/dima-star/static/js/2.b8477d02.chunk.js"
   },
   {
-    "revision": "2592aa485f57500b9824",
-    "url": "/dima-star/static/js/main.1685584d.chunk.js"
+    "revision": "f8829dfce59215191411",
+    "url": "/dima-star/static/js/main.2f0e1c40.chunk.js"
   },
   {
     "revision": "5b654f7d3d12355f9702",
