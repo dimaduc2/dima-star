@@ -148,8 +148,6 @@ class Movie extends Component {
         <Grid columns={4} divided>
           <Grid.Row>
             {danhBaPhimStarWars.map( (moiPhim, index) => <Grid.Column>
-              
-
 
               {/* <Button onClick={() => this.xemPhim(moiPhim.value)}
                       onClick={() => this.xemPhim(index)}
@@ -161,9 +159,6 @@ class Movie extends Component {
                 {moiPhim.ten}
               </Button>  */}
             
-
-
-
               <Button onClick={() => this.xemPhim(index)}
                       onMouseEnter={() => this.hienAnh(index)}
                       onMouseLeave={this.giauAnh}
@@ -182,7 +177,6 @@ class Movie extends Component {
 
         <br/><br/>
         <Button color='red' circular icon='search minus' onClick={this.phimNho} className="nut-phong-nho"></Button>
-      
         <Button color='blue' circular icon='search plus' onClick={this.phimTo} className="nut-phong-to"></Button>
       
 

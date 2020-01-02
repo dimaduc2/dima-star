@@ -90,7 +90,7 @@ const SITH  = [
     image: Darth_Vader
   },
   {
-    name: 'Lady Senior Sith Padme',
+    name: 'Lady Padme',
     image: Sith_Padme
   },
   {
