@@ -175,6 +175,7 @@ class Characters extends Component {
                   </Modal>
                   <br/>
                   {moiSITH.name}
+                  {index}
                   <br/><br/><br/><br/>
                 </div>
                 )

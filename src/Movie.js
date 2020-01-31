@@ -58,8 +58,6 @@ class Movie extends Component {
     soPhimDangXem: '',
     soAnhDangXem: '',
     dangXemAnhGioiThieu: false,
-
-
     widthPhim: '450px',
     heightPhim: '250px'
   }
@@ -68,7 +66,6 @@ class Movie extends Component {
   chonPhim  = (e, {value}) => {
     this.setState({soPhimDangXem: value })
   }
-
 
   xemPhim = ( soPhimMoi ) => {
     if (this.state.soPhimDangXem === soPhimMoi) {
@@ -96,7 +93,6 @@ class Movie extends Component {
   goiHello = ()=>{
     alert("hello")
   }
-  
 
   phimTo = () => {
     this.setState({widthPhim: '650px'})
@@ -108,11 +104,9 @@ class Movie extends Component {
     this.setState({heightPhim: '250px'})
   }
 
-
   //4 HTML và Component
   render() {
     const { soPhimDangXem, dangXemAnhGioiThieu, soAnhDangXem, widthPhim, heightPhim } = this.state
-
 
     return (
       <div className="Movie">
@@ -143,7 +137,6 @@ class Movie extends Component {
         <p onClick={this.goiHello}>hello</p>
 
         <br/><br/><br/><br/>
-
 
         <Grid columns={4} divided>
           <Grid.Row>
@@ -179,7 +172,6 @@ class Movie extends Component {
         <Button color='red' circular icon='search minus' onClick={this.phimNho} className="nut-phong-nho"></Button>
         <Button color='blue' circular icon='search plus' onClick={this.phimTo} className="nut-phong-to"></Button>
       
-
         {/* {danhBaPhimStarWars.map(
           (moiPhim, index) => 
           <div>

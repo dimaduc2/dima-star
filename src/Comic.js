@@ -121,6 +121,14 @@ class Comic extends Component {
             <Menu.Item as='a' href='#movie8'>
               Movie 8
             </Menu.Item>
+
+            <Menu.Item as='a' href='#movie9'>
+              Movie 9
+            </Menu.Item>
+
+            <Menu.Item as='a' href='#end'>
+              End?
+            </Menu.Item>
           </Menu>
         : null
         }
@@ -239,6 +247,8 @@ const ChoiceOneGreyJedi = () => {
       <Button style ={{margin: '5px'}}><a href='#movie6'>Movie 6</a></Button>
       <Button style ={{margin: '5px'}}><a href='#movie7'>Movie 7</a></Button>
       <Button style ={{margin: '5px'}}><a href='#movie8'>Movie 8</a></Button>
+      <Button style ={{margin: '5px'}}><a href='#movie9'>Movie 9</a></Button>
+      <Button style ={{margin: '5px'}}><a href='#end'>End?</a></Button>
       
       <ScrollableAnchor id={'OnceUponATime'}>
         <div></div> 
@@ -310,7 +320,15 @@ const ChoiceOneGreyJedi = () => {
       </ScrollableAnchor>
       <br/><br/><br/><br/><Movie8/><br/><br/><br/>
       
+      <ScrollableAnchor id={'movie9'}>
+        <div></div> 
+      </ScrollableAnchor>
+      <br/><br/><br/><br/><Movie9/><br/><br/><br/>
 
+      <ScrollableAnchor id={'end'}>
+        <div></div> 
+      </ScrollableAnchor>
+      <br/><br/><br/><br/><End/><br/><br/><br/>
     </div>
   )
 }
@@ -320,8 +338,11 @@ const ChoiceOneGreyJedi_OnceUponATime = () => {
     <div>
 <h1>Once upon a time</h1>
 <p> </p>
-<p>Từ ngày xưa ở trên trời có thần Force đang nhiều thế giới khác nhau bởi lương lai khác nhau và suy nghĩ, cuối cùng Force đã suy nghĩ chọn người được chọn có thể đi du hành thời gian gồm: Anakin và Padme và Obi-Wan. Sau đó Force cho bóng tối vào 3 người biến Anakin thành Sith tên là Lord Darth Vader và biến Padme thành Sith tên là Lady Darth Mirayya (trong truyện fanfiction tên là Darth Padme and the Clones of Kamino) và biến Obi-Wan thành Dark Jedi tên là Lord Darth Rego (trong truyện fanfiction tên là Lord and Master) thì 3 người mà Force đã chọn trở thành Gray Jedi và kết hợp 2 tên ban đầu và tên của bóng tối là: Lord Anakin Vader Skywalker và Lady Padme Mirayya Amidala và Lord Obi-Wan Rego Kenobi.</p>
-<p>1 hôm ở hành tinh Nar Shaddaa cậu Anakin 7 tuổi là nô lệ của zabrak cho đến khi cậu Anakin tìm thấy kiếm Jedi của Djon Son trong 300 năm (trong truyện fanfiction tên là Star Wars Episode 1: A Retelling) rồi giết chủ của mình và ăn trộm tiền của hắn rồi chạy trốn.</p>
+<p>Từ ngày xưa ở trên trời có thần Force đang nhiều thế giới khác nhau bởi lương lai khác nhau và suy nghĩ, cuối cùng Force đã suy nghĩ chọn người được chọn có thể đi du hành thời gian gồm: Anakin và Padme và Obi-Wan. Sau đó Force cho bóng tối vào 3 người biến Anakin thành Sith tên là Lord Darth Vader và biến Padme thành Sith tên là Lady Darth Mirayya (trong truyện fanfiction tên là Darth Padme and the Clones of Kamino) và biến Obi-Wan thành Dark Jedi tên là Lord Darth Rego (trong truyện fanfiction tên là Lord and Master) thì 3 người mà Force đã chọn trở thành Gray Jedi và kết hợp 2 tên ban đầu và tên của bóng tối là: Lord Anakin Vader Skywalker và Lady Padme Mirayya Amidala và Lord Obi-Wan Rego Kenobi. Trong khi đó ở trái đất, cậu Obi-Wan, cậu Anakin và cô Padme cùng lớp ở trường học tên là Starkiller (trong truyện fanfiction tên là Starkiller High Episode). Vào buổi tối, cậu Obi-Wan, cậu Anakin và cô Padme đi học về thì bị lỗ không gian hút vào thế giới Star Wars, thần Force nhìn cậu Obi-Wan, cậu Anakin và cô Padme rồi nói:</p>
+<ul>
+	<li>Obi-Wan, Anakin, Padme. 3 người này sẽ là người kiếm lấy thế giới Star Wars. Obi-Wan và Padme sẽ đầu thai từ bố mẹ ở thế giới Star Wars, còn Anakin sẽ đầu từ mẹ con người và ta.</li>
+</ul>
+<p>1 hôm ở hành tinh Nar Shaddaa cậu Anakin 7 tuổi là nô lệ của gia tộc Zabrak cho đến khi cậu Anakin tìm thấy kiếm Jedi của Djon Son trong 300 năm (trong truyện fanfiction tên là Star Wars Episode 1: A Retelling) rồi giết chủ của mình và ăn trộm tiền của hắn rồi chạy trốn.</p>
 <p>Sau 1 năm ở hành tinh Tatooine có bão cát và có cậu bé Anakin 8 tuổi (cậu ấy có 2 kiếm gồm kiếm xanh da rời của Djon Son và kiếm đỏ nhỏ của mình đã tạo ra) chạy (trong truyện fanfiction tên là The Holocron) vào hang khỏi bão cát để chờ bão cát ta, sau đó cậu bé Anakin thấy có cái thùng trong hang rồi mở ra xem thì thấy có quần áo và bộ giáp và hình lập phương màu tím (violet), khi cậu ấy chạp vào hình lập phương màu tím thì xuất hiện hình ảnh không gian ba chiều là 1 đàn ông lớn tuổi, người đàn ông lớn tuổi nói:</p>
 <ul>
 	<li>Ta là Revan Gatemaster to the Solari Holocron. Cảnh báo trước rằng ta sẽ không lấy sự hợp lý của bất kỳ sự ngu ngốc nào của mi nếu master của ngươi hỏi nơi mi đã học những gì ta dạy.</li>
@@ -442,7 +463,7 @@ const Movie1 = () => {
 <ul>
 	<li>Tên thật của tôi là Anakin Grey Jedi người được chọn và là con trai của thần Force, đầu tiên tôi học được Jedi từ Jedi Holocron của Jedi Revan được form V và form VI, sau đó học kiểm soát bóng tối từ Sith Holocron của Darth Revan đặt tên Vader, cuối cùng kết hợp 2 cả hai mặt sáng và tối bằng cách ăn bóng tối từ thầy Konath Ordon 6000 năm trước từ ngôi đền trong thác nước Naboo được form VII và form mới là form của Tulak tên là Dayoro. Tôi mặc bộ Jedi Revan vì để giúp nữ hoàng Naboo và mang bộ Darth Vader để mặc.</li>
 </ul>
-<p>Qui-Gon ngạc nhiên thấy cậu Anakin là người được chọn thật sự trước mặt mình, cô Nathrrya biết như Force đã nói khi mình ngủ đông và cho mình tầm nhìn liên quan đến cậu Anakin, Obi-Wan ngạc nhiên cậu Anakin có thể sử dụng 2 cả hai mặt sáng và tối nên trở thành Grey Jedi tuyệt vời, còn cô Padme im lặng nhìn chằm chằm cậu Anakin đẹp trai và là người Jedi tuyệt vời và mong mình được học Jedi từ cậu Anakin (nghe nói cô Padme không giỏi Jedi nên trở về Naboo với gia đình (trong truyện fanfiction tên là Breakaway SkywalkerSaga)). Vài giờ sau, cậu Anakin đã lấy dữ liệu của robot chỉ huy để làm bằng chứng và tàu vũ trụ Naboo đã đến hành tinh Tatooine thì cậu Anakin mời cô Padme, thầy Qui-Gon và cô Nathrrya đến nhà cậu Anakin thì thầy Qui-Gon và cô Nathrrya gặp được Jedi huyền thoại là cô Bastila còn sống trong 4000 năm làm thầy Qui-Gon gần như bị đau tim vì nghĩ rằng gặp Jedi đáng sợ, nhưng cậu Anakin thấy cô Bastila có cháu gái của mình cùng tên chồng của mình và chồng của cô Revan tên là Kaiser Drakon (Gray Jedi) là thợ săn nổi tiếng tên là Shadow Hunters (trong truyện fanfiction tên là Shadow Hunters) và có 2 đưa con là Thexan (Jedi) và Arcann (Jedi), Kaiser có 2 con chó Vornskr tên là Ghost (Vornskr big) và Wraith (Vornskr small), Shadow Hunters có 3 robot HK-47, HK-50 và R2-H7 (Echo), đội của Kaiser gồm Bao-Dur (Zabrak), Dar (Trandoshan), Diablo MNC, Tyr MNC, Krix (Trandoshan), Scath Sku Meat (Jedi) và Diana (Twi'lek) (người yêu của Scath).</p>
+<p>Thầy Qui-Gon ngạc nhiên thấy cậu Anakin là người được chọn thật sự trước mặt mình, cô Nathrrya đã biết như Force đã nói khi mình ngủ đông và cho mình tầm nhìn liên quan đến cậu Anakin, cậu Obi-Wan ngạc nhiên cậu Anakin có thể sử dụng 2 cả hai mặt sáng và tối nên trở thành Grey Jedi tuyệt vời, còn cô Padme im lặng nhìn chằm chằm cậu Anakin đẹp trai và là người Jedi tuyệt vời và mong mình được học Jedi từ cậu Anakin (nghe nói cô Padme không giỏi Jedi nên trở về Naboo với gia đình (trong truyện fanfiction tên là Breakaway SkywalkerSaga)). Vài giờ sau, cậu Anakin đã lấy dữ liệu của robot chỉ huy để làm bằng chứng và tàu vũ trụ Naboo đã đến hành tinh Tatooine thì cậu Anakin mời cô Padme, thầy Qui-Gon và cô Nathrrya đến nhà cậu Anakin thì thầy Qui-Gon và cô Nathrrya gặp được Jedi huyền thoại là cô Bastila còn sống trong 4000 năm như bất tử làm thầy Qui-Gon gần như bị đau tim vì thấy rằng mình đã gặp Jedi đáng sợ, nhưng cậu Anakin thấy cô Bastila có cháu gái của mình cùng tên chồng của mình và chồng của cô Revan tên là Kaiser Drakon (Gray Jedi) là thợ săn nổi tiếng tên là Shadow Hunters (trong truyện fanfiction tên là Shadow Hunters) và có 2 đưa con là Thexan (Jedi) và Arcann (Jedi), Kaiser có 2 con chó Vornskr tên là Ghost (Vornskr big) và Wraith (Vornskr small), Shadow Hunters có 3 robot HK-47, HK-50 và R2-H7 (Echo), đội của Kaiser gồm Bao-Dur (Zabrak), Dar (Trandoshan), Diablo MNC, Tyr MNC, Krix (Trandoshan), Scath Sku Meat (Jedi) và Diana (Twi'lek) (người yêu của Scath).</p>
 <p>Vài ngày sau, tàu vũ trụ Naboo đã có động cơ mới, đúng lúc cô Meetra Surik cầm kiếm Ankarres Sapphire xuất hiện trong lỗ thời gian (trong truyện fanfiction tên là A Wound in Time) như tầm nhìn của cậu Anakin nói đến, cô Bastila rất vui gặp được cô Meetra, cô Meetra nhìn thấy vợ của thầy mình rồi hỏi:</p>
 <ul>
 	<li>Vợ thầy… Đã có chuyện gì xảy ra với Darth Nihilus thế?</li>
@@ -491,7 +512,7 @@ const Movie1 = () => {
 <ul>
 	<li>Đi đi, cô ở lại giải thuyết với hắn, cô sẽ gặp cháu ở Naboo trước khi chuẩn bị chiến tranh, vì cô sẽ gặp bạn cũ của cô ở Naboo.</li>
 </ul>
-<p>Vader hiểu rồi chạy vào tàu vũ trụ Naboo để bay khỏi hành tinh Tatooine cùng Shadow Hunters và đến hành tinh Coruscant, còn Darth Maul nhìn cô Bastila đang nhìn chằm chằm rồi hiện mắt của Sith làm Darth Maul giật mình cảm thấy mình bị cô Bastila đang nuốt chửng linh hồn. Đúng lúc Palpatine cảm nhận học sinh Darth Maul bị tra tấn đến chết. Vài giờ sau, Boss Shadow Hunters đến ngôi đền làm Mace và Yoda nghi ngờ sao thợ săn lại đến ngôi đền rồi thầy Mace hỏi tội thợ săn:</p>
+<p>Vader hiểu rồi chạy vào tàu vũ trụ Naboo để bay khỏi hành tinh Tatooine cùng Shadow Hunters và đến hành tinh Coruscant, còn Darth Maul nhìn cô Bastila đang nhìn chằm chằm rồi hiện mắt của Sith làm Darth Maul giật mình cảm thấy mình bị cô Bastila đang nuốt chửng linh hồn. Đúng lúc Palpatine cảm nhận học sinh Darth Maul bị tra tấn đến chết và không biết ai đã làm. Vài giờ sau, Boss Shadow Hunters đến ngôi đền làm Mace và Yoda nghi ngờ sao thợ săn lại đến ngôi đền rồi thầy Mace hỏi tội thợ săn:</p>
 <ul>
 	<li>Thằng kia, mi làm gì ở đây? Mi đang âm mưu gì?</li>
 </ul>
@@ -567,7 +588,7 @@ const Movie1 = () => {
 <ul>
 	<li>Hiểu rồi… Ôi… Vợ ta… Cháu gái ta… Sao cháu ta lại có tên của ta cơ chứ? Anakin, chú sẽ gặp vợ chú sau khi chúng ta đến hành tinh Naboo.</li>
 </ul>
-<p>Trong vài phút cô Nathrrya tiết lộ cho hội đồng Jedi rằng cô ấy là Sith và là vợ Jedi nổi tiếng tên là Captain Malavai Qinn và mong muốn giết Sidious vì hắn ta là Sith điên hèn mạn. Đúng lúc cô bé Faith có tầm nhìn là ông Palpatine là Lord Sith Sidious rồi báo cho mẹ mình biết làm cô Tahl vội vàng báo động cho Jedi làm cô Nathrrya điên lên và muốn giết Lord Sith Sidious. Vài phút sau, chú Revan, cô Nathrrya các Jedi Master tấn công Palpatine cho đến khi hắn ta mất 2 kiếm là 1 kiếm bị cậu Anakin cướp và kiếm kia khi Sidious bị chặt tay, nhưng không may Sidious đã nhảy ra khỏi cửa sổ và chạy trốn rồi. Vài giây sau, Sidious ở trong tàu của mình chạy trốn và nghĩ “Không thể tin nổi. Sao có Lady Sith Nathrrya còn sống và lại đi cùng Jedi cơ chứ.”, còn cậu Anakain đã lấy 1 Synthetic lightsaber Crystal của Sidious mà cậu Anakin đã cướp rồi biến Synthetic lightsaber Crystal Red thành Synthetic lightsaber Crystal White, sau đó Synthetic lightsaber Crystal White đó sẽ là của cậu Anakin. Vài phút sau, vào buổi tối ở hành tinh Naboo trong rừng có cô Bastila đang cầm kiếm vàng 2 đầu đã giết Cala Mabyn phản bội Jedi vì cô ấy là người yêu của Sith tên là Nardo Tabansi (trong truyện fanfiction tên là Life In The Jedi Temple) và đã giết hắn ta và bố hắn (Dagan Tabansi) và mẹ hắn (Maida Tabansi) trừ em gái hắn (Nonie Tabansi) vì cô ấy đã từ bỏ Sith và trở thành học sinh của cô Bastila, sau đó cô Bastila nhìn lên bầu trời và nghĩ “Chồng sẽ đến sớm thôi.”, sau đó cô Bastila đi luôn và phía sau cô ấy có 2 người cấp dưới mới của cô ấy là Maul (không có tên Darth vì không có bóng tối vì hắn ta bị cô Bastila nuốt chửng bóng tối ở hành tinh Tatooine nên cô ấy biến Maul thành Jedi) cầm kiếm 2 đầu xanh da trời. Vài giờ sau, đội Shadow Hunters, cô Nathrrya, cậu Obi-Wan, gia đình Qui-Gon, Vader, và người cùng Padme (cô ấy đã có kiếm xanh lá cây của mình để đề phòng khi chiến tranh) đến hành tinh Naboo. Vài phút sau, chú Revan gặp được cô Bastila thì 2 vợ chồng rất vui vì đã gặp nhau, còn thầy Qui-Gon thấy cô Bastila đã biến Maul thành Jedi bằng cách cô Bastila nuốt chửng bóng tối của Maul và cô Bastila có học sinh Sith là cô Nonie vì cô ấy đã từ bỏ Sith và từ bỏ tên họ Tabansi vì nhận ra gia đình Tabansi điên. Vài phút sau, Vader lái tàu chiến tranh N-1 starfighter 1 mình để bay vào tàu vũ trụ robot Lucrehulk-class Droid Control Ship để phá hủy làm robot ở Naboo không cử động nữa vì mất điều khiển và chúng sẽ là của Vader mà anh ta muốn, còn cô Nathrrya đã giết Nute Gunray vì tội giết người vô tội, còn Rune Haako bị công an Naboo bắt đi. Trong khi đó có thợ săn Jango Fett đang sợ hãi vì bắt gặp Jedi không bình thường là Shadow Hunters Kaiser thợ săn nổi tiếng, vì vậy thợ săn Jango thà trở thành cấp dưới của Shadow Hunters Kaiser còn hơn là chết đáng sợ. Vài giờ sau, cô Padme xin học việc của cô Nathrrya thì cô ấy hiểu, còn đội Shadow Hunters sẽ sống ở hành tinh Kamino với thợ săn Jango. Vào buổi tối, cậu Obi-Wan và cô Padme ngủ rồi nghe thấy tiếng bước chân thì 2 người đó ra xem ai đi qua thì thấy là cậu Anakin đi lang thang đến phòng ngai vàng của cô Padme làm cô ấy và cậu Obi-Wan không biết cậu Anakin làm gì rồi thấy cậu ấy ngã xuống đất làm cậu Obi-Wan và cô Padme lo quá chạy đến xem cậu Anakin có sao không, nhưng khi cậu Obi-Wan và cô Padme chạm cậu Anakin làm linh hồn của cậu Obi-Wan và cô Padme bị lôi kéo theo cậu Anakin bằng lực lượng của cậu ấy đến thế giới khác là thế giới tồi tệ. Trong thế giới tồi tệ, cậu Obi-Wan và cô Padme ngã vào thế giới tồi tệ và thấy thành phố đầy bóng tối làm họ sợ, nhưng họ được cậu Anakin đưa an toàn. Cậu Anakin hỏi:</p>
+<p>Trong vài phút cô Nathrrya tiết lộ cho hội đồng Jedi rằng cô ấy là Sith và là vợ Jedi nổi tiếng tên là Captain Malavai Qinn và mong muốn giết Sidious vì hắn ta là Sith điên hèn mạn. Đúng lúc cô bé Faith có tầm nhìn là ông Palpatine là Lord Sith Sidious rồi báo cho mẹ mình biết làm cô Tahl vội vàng báo động cho Jedi làm cô Nathrrya điên lên và muốn giết Lord Sith Sidious. Vài phút sau, chú Revan, cô Nathrrya, cậu Anakin và các Jedi Master đến gặp Palpatine để tấn công hắn, có điều này khi cậu Anakin thấy Sidious có 1 kiếm xuất hiện trên tay khi nó ra khỏi ống tay áo thì cậu Anakin dùng lực lượng hút 1 cái kiếm của Sidious trước khi hắn lấy kiếm thứ 2.  Vài phút sau, cô Nathrrya chặt tay Sidious mất đi kiếm còn lại, nhưng không may Sidious đã nhảy ra khỏi cửa sổ và chạy trốn rồi. Vài giây sau, Sidious ở trong tàu của mình chạy trốn và nghĩ “Không thể tin nổi. Sao có Lady Sith Nathrrya còn sống và lại đi cùng Jedi cơ chứ.”, còn cậu Anakain đã lấy 2 Synthetic lightsaber Crystal của Sidious mà cậu Anakin đã cướp rồi biến Synthetic lightsaber Crystal Red thành Synthetic lightsaber Crystal White, nhưng cậu Anakin thấy chỉ có 1 Synthetic lightsaber Crystal White và Synthetic lightsaber Crystal Red vẫn còn rồi thấy nó đã chọn cậu ấy. Vài phút sau, vào buổi tối ở hành tinh Naboo trong rừng có cô Bastila đang cầm kiếm vàng 2 đầu đã giết Cala Mabyn phản bội Jedi vì cô ấy là người yêu của Sith tên là Nardo Tabansi (trong truyện fanfiction tên là Life In The Jedi Temple) và đã giết hắn ta và bố hắn (Dagan Tabansi) và mẹ hắn (Maida Tabansi) trừ em gái hắn (Nonie Tabansi) vì cô ấy đã từ bỏ Sith và trở thành học sinh của cô Bastila, sau đó cô Bastila nhìn lên bầu trời và nghĩ “Chồng sẽ đến sớm thôi.”, sau đó cô Bastila đi luôn và phía sau cô ấy có 2 người cấp dưới mới của cô ấy là Maul (không có tên Darth vì không có bóng tối vì hắn ta bị cô Bastila nuốt chửng bóng tối ở hành tinh Tatooine nên cô ấy biến Maul thành Jedi) cầm kiếm 2 đầu xanh da trời. Vài giờ sau, đội Shadow Hunters, cô Nathrrya, cậu Obi-Wan, gia đình Qui-Gon, Vader, và người cùng Padme (cô ấy đã có kiếm xanh lá cây của mình để đề phòng khi chiến tranh) đến hành tinh Naboo. Vài phút sau, chú Revan gặp được cô Bastila thì 2 vợ chồng rất vui vì đã gặp nhau, còn thầy Qui-Gon thấy cô Bastila đã biến Maul thành Jedi bằng cách cô Bastila nuốt chửng bóng tối của Maul và cô Bastila có học sinh Sith là cô Nonie vì cô ấy đã từ bỏ Sith và từ bỏ tên họ Tabansi vì nhận ra gia đình Tabansi điên. Vài phút sau, Vader lái tàu chiến tranh N-1 starfighter 1 mình để bay vào tàu vũ trụ robot Lucrehulk-class Droid Control Ship để phá hủy làm robot ở Naboo không cử động nữa vì mất điều khiển và chúng sẽ là của Vader mà anh ta muốn, còn cô Nathrrya đã giết Nute Gunray vì tội giết người vô tội, còn Rune Haako bị công an Naboo bắt đi. Trong khi đó có thợ săn Jango Fett đang sợ hãi vì bắt gặp Jedi không bình thường là Shadow Hunters Kaiser thợ săn nổi tiếng, vì vậy thợ săn Jango thà trở thành cấp dưới của Shadow Hunters Kaiser còn hơn là chết đáng sợ. Vài giờ sau, cô Padme xin học việc của cô Nathrrya thì cô ấy hiểu, còn đội Shadow Hunters sẽ sống ở hành tinh Kamino với thợ săn Jango. Vào buổi tối, cậu Obi-Wan và cô Padme ngủ rồi nghe thấy tiếng bước chân thì 2 người đó ra xem ai đi qua thì thấy là cậu Anakin đi lang thang đến phòng ngai vàng của cô Padme làm cô ấy và cậu Obi-Wan không biết cậu Anakin làm gì rồi thấy cậu ấy ngã xuống đất làm cậu Obi-Wan và cô Padme lo quá chạy đến xem cậu Anakin có sao không, nhưng khi cậu Obi-Wan và cô Padme chạm cậu Anakin làm linh hồn của cậu Obi-Wan và cô Padme bị lôi kéo theo cậu Anakin bằng lực lượng của cậu ấy đến thế giới khác là thế giới tồi tệ. Trong thế giới tồi tệ, cậu Obi-Wan và cô Padme ngã vào thế giới tồi tệ và thấy thành phố đầy bóng tối làm họ sợ, nhưng họ được cậu Anakin đưa an toàn. Cậu Anakin hỏi:</p>
 <ul>
 	<li>Sao các cậu lại ở đây?</li>
 </ul>
@@ -591,15 +612,27 @@ const Movie1 = () => {
 <ul>
 	<li>Tôi là Jedi Padme ở thế giới khác, và mi đừng hòng có Anakin của ta.</li>
 </ul>
-<p>Dark Padme im lặng rồi chết và biến mất thành bóng tối bay vào cô Padme làm cô ấy trở thành không còn là Jedi và Sith nữa mà là Grey Jedi như cậu Anakin Vader rồi cô Padme đặt tên cho mình khi mình Sith là Darth Mirayya (trong truyện fanfiction tên là Darth Padmé and the Clones of Kamino), đúng lúc kiếm của cô Padme là màu xanh lá cây thành đỏ vì nó bị chảy máu rồi lóe sáng thành kiếm trắng. Trong khi đó cậu Anakin tìm thấy 6 Corusca Gems (chúng là đá quý và chúng có 4 xanh da trời, xanh lá cây và tím (violet)) rồi làm ra kiếm từ 6 Corusca Gems ra 4 kiếm xanh da trời, 1 kiếm xanh lá cây và 1 kiếm tím. Vài phút sau, cậu Anakin và cô Padme và cậu Obi-Wan trở về tập hợp rồi chuẩn bị về thế giới của mình và kịp nhìn thấy Dark Mace không kịp bắt.</p>
+<p>Dark Padme im lặng rồi chết và cô Padme ăn biến mất thành bóng tối bay vào cô Padme làm cô ấy trở thành không còn là Jedi và Sith nữa mà là Grey Jedi như cậu Anakin Vader rồi cô Padme đặt tên cho mình khi mình Sith là Darth Mirayya (trong truyện fanfiction tên là Darth Padmé and the Clones of Kamino), đúng lúc kiếm của cô Padme là màu xanh lá cây thành đỏ vì nó bị chảy máu rồi lóe sáng thành kiếm trắng. Trong khi đó cậu Anakin tìm thấy 6 Corusca Gems (chúng là đá quý và chúng có 4 xanh da trời, xanh lá cây và tím (violet)) rồi làm ra kiếm từ 6 Corusca Gems ra 4 kiếm xanh da trời, 1 kiếm xanh lá cây và 1 kiếm tím. Vài phút sau, cậu Obi-Wan, cậu Anakin và cô Padme trở về tập hợp rồi chuẩn bị về thế giới của mình và kịp nhìn thấy Dark Mace không kịp bắt. Vài phút sau, cậu Obi-Wan, cậu Anakin và cô Padme thấy mình ở trong không gian lạ và gặp được thần Force đến làm cậu Obi-Wan, cậu Anakin và cô Padme lo lắng vì đã gặp vị thần và không biết thần ấy làm gì. Thần Force nói với cậu Obi-Wan, cậu Anakin và cô Padme:</p>
+<ul>
+	<li>Chào mừng các ngươi ở thế giới của ta. Để ta trả lại bộ nhớ cũ của các ngươi đây.</li>
+</ul>
+<p>Thần Force trả lại bộ nhớ cũ cho cậu Obi-Wan, cậu Anakin và cô Padme làm họ nhớ ra họ là người trái đất được gửi đến thế giới Star Wars làm họ rất vui gặp nhau, thần Force nói:</p>
+<ul>
+	<li>3 người, vui vẻ thế đủ rồi.</li>
+</ul>
+<p>Cậu Obi-Wan, cậu Anakin và cô Padme giật mình quên mất vị thần ở đây làm họ xấu hổ trước mặt vị thần, thần Force thở dài rồi nói:</p>
+<ul>
+	<li>Bây ta sẽ cho ngươi xem tất cả thế giới khác nhau, vì ta không thể đây lâu, vì vậy các ngươi hãy quyết định và làm cho tốt vào. Còn nữa, đừng nói bất kỳ ai đấy.</li>
+</ul>
+<p>Thần Force cho cậu Obi-Wan, cậu Anakin và cô Padme xem các thế giới khác nhau rồi biết mất để lại họ 1 mình xem thế giới kkhác nhau.</p>
 <p>Vào buổi sáng hôm sau, thầy Qui-Gon và các nữ hầu của cô Padme đi tìm cậu Obi-Wan, cậu Anakin và cô Padme vì không thấy họ trong phòng ngủ rồi thấy họ ngủ nằm trên đất trong phòng ngai vàng rồi thầy Qui-Gon thấy cậu Anakin thêm 6 kiếm ở đâu đó và sao cậu Obi-Wan có 2 kiếm. Vài phút sau, cậu Obi-Wan, cậu Anakin và cô Padme ngủ dậy và giải thích những gì mà họ đã đến thế giới tồi tệ làm gì làm gia đình thầy Qui-Gon, đội Shadow Hunters, cô Nathrrya, chú Revan, cô Bastila và cô Meetra ngạc nhiên rằng Force đã chọn cậu Obi-Wan, cậu Anakin và cô Padme và từ nay họ có tên mới như tên Jedi và tên Sith kết hợp là cậu Anakin Vader Skywalker và cô Padme Mirayya Amidala và cậu Obi-Wan Rego Kenobi. Vài giờ sau, cô Tahl cho cậu Anakin và cô Padme 2 Crystal Sapphire mà cô Tahl có 3 Crystal Sapphire mà khó dùng (trong truyện fanfiction tên là What if Darth Maul killed ObiWan Kenobi). Sau đó cậu Anakin giúp cô Padme nhắm Crystal Sapphire và Crystal White và tập trung lực lượng làm Crystal Sapphire và Crystal White lóe sáng rồi tắt thành Crystal Ankarres Sapphire làm thầy Qui-Gon và cô Tahl ngạc nhiên cậu Anakin và cô Padme cơ thể tạo được Crystal Ankarres Sapphire từ Crystal Sapphire và Crystal White kết hợp, còn thầy Qui-Gon có Crystal mới và nó là màu trắng vì thầy ấy là Grey Jedi rồi kết hợp Crystal Sapphire thành Crystal Ankarres Sapphire.</p>
-<p>Vài ngày sau đó ở hành tinh Ilum, cậu Anakin có đã có 2 Crystal Blue Green, sau đó cậu Anakin kết hợp kết hợp 2 Adegan Crystal Bue Green với Crystal Red của mình:</p>
+<p>Vài ngày sau đó ở hành tinh Ilum, cậu Anakin có đã có 2 Kyber Crystal Blue Green, sau đó cậu Anakin kết hợp kết hợp 2 Kyber Crystal Bue Green với Kyber Crystal Red của mình:</p>
 <p> </p>
-<p>Crystal Green kết hợp với Crystal Red thành Crystal White rồi kết hợp đá quý Crystal Sapphire mà cô Tahl đã cho thành Crystal Ankarres Sapphire,</p>
+<p>Kyber Crystal Blue kết hợp với Kyber Crystal Red của mình thành 3 Kyber Crystal loại tím gồm Kyber Crystal Magenta và Kyber Crystal Amethyst (Kyber Crystal Purple) và Kyber Crystal Royal Purple (Kyber Crystal Violet) (trong truyện fanfiction tên là The Inevitability of Oversight) rồi kết hợp Lignan Crystal (cậu ấy có nó trước khi đi đến hành tinh Naboo là cậu Anakin đến Mặt trăng lớn nhất của hành tinh Phaegon III) thành Crystal Purple core Black (trong truyện fanfiction tên là The Senator and the Supreme Commander) (gồm Crystal Black (trong truyện fanfiction tên là Darth Vader Rebirth)) rồi kết hợp Synthetic lightsaber Crystal Red thành Ebon Crystal (giống cái Crystal của Dark Je’Daii ở hành tinh Krev Coeur, cậu ấy có nó vì nhờ 2 linh hồn vợ chồng Je’Daii (trong chuyện Star Wars Dawn Of The Jedi gồm cậu Tau (Xesh (tên đó khi cậu ấy là thợ săn)) và cô Shae Koda) giúp) (nạp năng lượng cho Ebon Crystal bằng Force Dark Side).</p>
 <p> </p>
-<p>Crystal Blue kết hợp với Crystal Red của mình thành Crystal Purple core Black (trong truyện fanfiction tên là The Senator and the Supreme Commander) (gồm Crystal Black (trong truyện fanfiction tên là Darth Vader Rebirth) và 3 Crystal loại tím gồm Crystal Magenta và Crystal Amethyst (Crystal Purple) và Crystal Royal Purple (Crystal Violet) (trong truyện fanfiction tên là The Inevitability of Oversight)) rồi kết hợp Ebon Crystal (cậu ấy có nó trước khi đi đến hành tinh Naboo và khi cậu ấy có nó vì được 2 linh hồn vợ chồng Je’Daii (trong chuyện Star Wars Dawn Of The Jedi gồm cậu Tau (Xesh (tên đó khi cậu ấy là thợ săn)) và cô Shae Koda) cho biết ở đâu) thành Ebon Crystal Violet của Je’Daii.</p>
+<p>Kyber Crystal Green kết hợp với Kyber Crystal Red thành Kyber Crystal White rồi kết hợp đá quý Crystal Sapphire mà cô Tahl đã cho thành Crystal Ankarres Sapphire, đúng lúc cậu Anakin thấy Crystal Ankarres Sapphire phát sáng thu hút Crystal Adegan, sau đó cậu Anakin kết hợp Crystal Ankarres Sapphire và Crystal Adegan thành Mantle of the Force (giống của Revan mà anh ta đã giải thích về nó) (nạp năng lượng cho Mantle of the Force bằng Force Light Side).</p>
 <p> </p>
-<p>Sau đó, cậu Anakin cho Crystal Ankarres Sapphire vào trong kiếm Vader làm kiếm Vader có màu xanh da trời, đúng lúc cậu Anakin thấy cô gái Sith cầm 2 kiếm tên là Komari Vosa và là học sinh cũ của Dooku (trong truyện fanfiction tên là Protégé 2- Padawans) thì cậu Anakin bật kiếm xanh ra trời ra tấn công cô Komari. Vài phút sau cậu Anakin và cô Komari đanh nhau, nhưng cậu Anakin lúc nào bị cô Komari đẩy bằng lục lượng làm cậu Anakin ngã làm cậu ấy điên lên rồi đánh nhau tiếp với cô Komari cho đến khi đá mặt cô ấy làm cậu Anakin cơ hội đẩy lực lượng làm cô Komari bị bay cả người đập vào núi băng, sau đó cậu Anakin chạy vào núi băng để đi tìm cô Komari rồi đánh nhau tiếp, cậu Anakin tiếp tục đẩy lực lượng làm cô Komari bị bay cả người khỏi núi băng, sau đó cậu Anakin và cô Komari tiếp tục đánh nhau lên đỉnh núi băng, nhưng cậu Anakin đã tóm tay cô Komari rồi điện cô ấy bằng điện vàng tên là Electric Judgement làm cô ấy bị điện rồi xỉu, sau đó cậu Anakin mang cô Komari về. Vài giờ sau, ông Dooku đang nghỉ ngơi rồi thấy học sinh của mình (cô Komari) đã về và không còn là Sith nữa vì cô Bastila đã ăn bóng tối của cô Komari làm ông Dooku rất vui vì cô Komari còn sống và đã trở về rồi ông Dooku và cô Komari ôm nhau vì 2 thầy em nhớ nhau.</p>
+<p>Sau đó, cậu Anakin cho Mantle of the Force vào trong kiếm Vader làm kiếm Vader có màu xanh da trời, đúng lúc cậu Anakin thấy cô gái Sith cầm 2 kiếm tên là Komari Vosa và là học sinh cũ của Dooku (trong truyện fanfiction tên là Protégé 2- Padawans) thì cậu Anakin bật kiếm xanh ra trời ra tấn công cô Komari. Vài phút sau cậu Anakin và cô Komari đanh nhau, nhưng cậu Anakin lúc nào bị cô Komari đẩy bằng lục lượng làm cậu Anakin ngã làm cậu ấy điên lên rồi đánh nhau tiếp với cô Komari cho đến khi đá mặt cô ấy làm cậu Anakin cơ hội đẩy lực lượng làm cô Komari bị bay cả người đập vào núi băng, sau đó cậu Anakin chạy vào núi băng để đi tìm cô Komari rồi đánh nhau tiếp, cậu Anakin tiếp tục đẩy lực lượng làm cô Komari bị bay cả người khỏi núi băng, sau đó cậu Anakin và cô Komari tiếp tục đánh nhau lên đỉnh núi băng, nhưng cậu Anakin đã tóm tay cô Komari rồi điện cô ấy bằng điện vàng tên là Electric Judgement làm cô ấy bị điện rồi xỉu, sau đó cậu Anakin mang cô Komari về. Vài giờ sau, ông Dooku đang nghỉ ngơi rồi thấy học sinh của mình (cô Komari) đã về và không còn là Sith nữa vì cô Bastila đã ăn bóng tối của cô Komari làm ông Dooku rất vui vì cô Komari còn sống và đã trở về rồi ông Dooku và cô Komari ôm nhau vì 2 thầy em nhớ nhau.</p>
 <p>Vài ngày sau, thầy Qui-Gon và cô Siri đào tạo cậu Anakin và cô Nathrrya đào tạo cô Padme, còn cậu Obi-Wan quyết định về nhà với gia đình. Vài giờ sau trong hành tinh Stewjon (trong truyện fanfiction tên là Star Wars : Knight of The Force), cậu Obi-Wan đã đến lâu đài để gặp vua tên là Khal và hoàng hậu tên là Nicki. Vài phút sau, cậu Obi-Wan đã đến lâu đài để gặp vua Khal và hoàng hậu Nicki. Sau khi cậu Obi-Wan giới thiệu tên họ và anh ta từ bỏ Jeid vì anh ta là Grey Jeid tự do và được thầy cũ của mình đã cho vị trí gia đình nên anh ta quyết định sẽ sống với gia đình làm vua Khal và hoàng hậu Nicki im lặng ngạc nhiên cậu Obi-Wan chính là con trai lớn của vua Khal và hoàng hậu Nicki làm họ rất vui và phát khóc vì con trai lớn của mình đã về, sau đó cậu Obi-Wan thấy mình có em trai tên là Owen làm cậu Obi-Wan rất vui vì đã có bố mẹ và em trai.</p>
 <p>Vài ngày sau, cậu Anakin có nhiều robot mà mình muốn gồm</p>
 <p>C-3PO (See-Threepio),</p>
@@ -611,7 +644,7 @@ const Movie1 = () => {
 <p>10 con ASP-7 (trong truyện fanfiction tên là The Dark Lord of Naboo),</p>
 <p>J9 (trong truyện fanfiction tên là The Dark Lord of Naboo),</p>
 <p>R1-series astromech droid (trong truyện fanfiction tên là The Dark Lord of Naboo),</p>
-<p>M88-AD (Model-88) (trong truyện fanfiction tên là The Dark Lord of Naboo) cầm kiếm đỏ (có Crystal Red của Darth Maul) cũ của cậu Anakin mà cậu ấy đã bỏ vì cậu ấy có 2 kiếm mới (giống Lightsaber của Starkiller mà Darth Vader tạo ra trong phim force unleashed 2 như kiếm Vader với kiếm Starkiller Clone (Aberrant)) mà cậu ấy đã tạo với Ebon Crystal Royal Purple (Violet) và Crystal Ankarres Sapphire làm cậu ấy có 2 kiếm và chúng có thể lắp với nhau thành kiếm 2 đầu  có 2 màu xanh da trời (Ankarres Sapphire) và tím (Royal Purple (Violet)).</p>
+<p>M88-AD (Model-88) (trong truyện fanfiction tên là The Dark Lord of Naboo) cầm kiếm đỏ (có Crystal Red của Darth Maul) cũ của cậu Anakin mà cậu ấy đã bỏ vì cậu ấy có 2 kiếm mới (giống Lightsaber của Starkiller mà Darth Vader tạo ra trong phim force unleashed 2 như kiếm Vader với kiếm Starkiller Clone (Aberrant)) mà cậu ấy đã tạo với Ebon Crystal và Mantle of the Force làm cậu ấy có 2 kiếm và chúng có thể lắp với nhau thành kiếm 2 đầu có 2 màu xanh da trời và tím.</p>
 <p>DRK-1 Dark Eye probe droid (được lấy từ Darth Maul)</p>
 <p>Vài ngày sau, ông Dooku đã ra khỏi Jedi và trở thành Sith tốt khi theo cô Nathrrya vì cô ấy đã cứu thầy Sifo-Dyas bạn của ông Dooku. Cô Nathrrya có tầm nhìn là Asajj Ventress sẽ trở thành Sith nếu thầy Ky Narec chết nên cô Nathrrya đã kịp cứu thầy Ky và giúp cô Asajj đưa dân tộc của cô ấy an toàn. Trong khi đó Sidious rất điên vì cô Nathrrya đã cướp ông Dooku và cô Asajj khỏi kế hoạch tương lai của Sidious.</p>
     </div>
@@ -1008,6 +1041,61 @@ const Movie8 = () => {
   )
 }
 
+const Movie9 = () => {
+  return (
+    <div>
+<h1>Movie 9</h1>
+<p> </p>
+<p>Trong tàu vũ trụ của Snoke, có cậu Anakain đã tìm thấy Sith Wayfinder rồi ra lệnh Stormtrooper đến hành tinh Exegol mà Sith Wayfinder có vị trí hành tinh Exegol. Vài giờ sau, những phi công Stormtrooper của Vader lái tàu chiến tranh đi chiếu đấu với Stormtrooper của Palpatine và bắn nhiều tàu khổng lồ của hắn bằng cách bắn vào khẩu súng bắn phá hành tinh dưới tàu khổng của hắn, còn cậu Anakin đến gặp Palpatine để giết hắn, Palpatine thấy cậu Anakin ở đây rồi định hút sinh lực của cậu ấy, nhưng khi Palpatine hút sinh lực của cậu Anakin thì thấy bị ngộ độc bản thân rồi nhìn cậu ấy, cậu Anakin cười và nói:</p>
+<ul>
+	<li>Mi đã hút sinh lực bóng tối và cái đó đang ăn bóng tối của ngươi.</li>
+</ul>
+<p>Palpatine bắn điện vào cậu Anakin thì thấy cậu ấy tóm điện của Palpatine rồi biến điện của hắn thành điện hồng và nói:</p>
+<ul>
+	<li>Vẫn không thay đổi.</li>
+</ul>
+<p>Cậu Anakin quận tròn điện hồng trong không khí bằng lực lượng đẩy thành cầu điện rồi bắn nó vào Palpatine làm hắn ta bị nổ tung thành bụi. Sau đó cậu Anakin đi về hành tinh Corellian.</p>
+    </div>
+    )
+}
+const End = () => {
+  return (
+    <div>
+<h1>END?</h1>
+<p> </p>
+<p>Và năm sau, cậu Anakin dậy con cháu của mình (từ con của Antares Draco và Marasiah Fel, con của Jariah Syn và Ahnah Rawk, con của Cade Skywalker và Deliah Blue) và biến con của Antares và Marasiah thành thủ tướng Corellian. Trong khi đó, cậu Anakin trở về tàu của mình Sith Dreadnaught-Class (trong tàu đó có</p>
+<p>30 Droid gồm:</p>
+<p>1 HK-47,</p>
+<p>1 T3-M4,</p>
+<p>1 T7-O1,</p>
+<p>1 X2-C3,</p>
+<p>2 C-3PO (See-Threepio) (gọi nó là Threepio),</p>
+<p>2 ASP-7 x 10 (trong truyện fanfiction tên là The Dark Lord of Naboo),</p>
+<p>2 J9 (trong truyện fanfiction tên là The Dark Lord of Naboo),</p>
+<p>2 Model-88 or M88-AD (trong truyện fanfiction tên là The Dark Lord of Naboo),</p>
+<p>2 R1-G4 (The Dark Lord of Naboo),</p>
+<p>3 G7-68 (nó màu đen, mắt đỏ, hình dáng giống C-3PO, nó lấy từ 0-0-0 (Triple-Zero) và có là bác sĩ phấu thuật) (trong truyện fanfiction tên là The Sith Apprentice),</p>
+<p>3 Iron Man Vader (nó có nhiều vũ khí từ BT-1) (trong truyện fanfiction tên là Skywalker A Fanon Story),</p>
+<p>3 PROXY (trong truyện fanfiction tên là Skywalker A Fanon Story) ,</p>
+<p>4 R2-D2 (Artoo-Detoo) (gọi nó là Artoo),</p>
+<p>5 Cam droid (Orbie) (trong truyện fanfiction tên là Misunderstood V2),</p>
+<p>6 R4-P44 (Petey) (trong truyện fanfiction tên là Misunderstood-Misunderstood V2),</p>
+<p>7 DRK-1 Dark Eye probe droid x 3 (chúng của Darth Maul),</p>
+<p>8 ID10 (ID9) x 3 (chúng của Seventh Sister ID9).</p>
+<p>Và 5 tàu vũ trụ nhỏ gồm:</p>
+<p>tàu trở hàng CC-9600 Frigate-Class (tên mới là Leviathan) (trong truyện fanfiction tên là Star Wars Lord Vader of Naboo),</p>
+<p>Kappa-Class Shuttle (tên mới là Susanoo) (trong truyện fanfiction tên là Star Wars Lord Vader of Naboo),</p>
+<p>Serenno (tàu của Dooku),</p>
+<p>Scimitar (tên mới là Angel Queen) (tàu của Maul's ship),</p>
+<p>Ginivex-Class Starfighter (tàu của Asajj's ship),</p>
+<p>). Sau khi cậu Anakain nhìn trong phòng kho Holocron có 195 Holocron (trong chúng có linh hồn có tình yêu gồm bạn bè của cậu ấy và người yêu cậu ấy) rồi tngồi rên ghế phi công và nhìn bàn bên cạnh là Holocron Malachor và trong đó không còn là Kyber Crystal Red nữa mà được thay thế là Synthetic Lightsaber  Crystal, sau đó cậu Anakin ngồi tựa ghế phi công và nhìn cửa sổ trước mặt ngắm sao trên vũ trụ rồi nói:</p>
+<ul>
+	<li>Thà, mình đã nhớ ra mình và Padme và Obi-Wan được gửi từ trái đất đến đây. Trong thời này mình và Padme và Obi-Wan đã làm công việc tốt đẹp ở thế giới này. Nhưng Obi-Wan và Padme đã chết nên không trở về trái đất nữa và chỉ còn mình sống bất tử ngờ bóng tối như Bastila đã dậy. Đáng ngạc nhiên là mình là con trai thần Force và vợ thần ấy là nữ thần băng có thể tạo Crystal ở hành tinh Ilum nên mình có thể kết hợp các Kyber Crystal và Gemstones. Bây giờ có lẽ mình ngủ trong thời gian dài.</li>
+</ul>
+<p>Cậu Anakin nói xong ngủ luôn và cơ thể đóng băng để ngủ đông vì cậu ấy có sức mạnh từ mẹ mình.</p>
+    </div>
+    )
+}
 
 
 const AnakinPast_OnceUponATime = () => {
