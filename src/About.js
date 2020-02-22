@@ -26,6 +26,30 @@ class About extends Component {
           Weapon là gì?
           <br/>
           là danh sách của những vũ khí.
+          <br/><br/>
+          Ship là gì?
+          <br/>
+          là 
+          <br/><br/>
+          Movie là gì?
+          <br/>
+          là 
+          <br/><br/>
+          Comic là gì?
+          <br/>
+          là 
+          <br/><br/>
+          Anakin Side là gì?
+          <br/>
+          là 
+          <br/><br/>
+           là gì?
+          <br/>
+          là 
+          <br/><br/>
+          Admin là gì?
+          <br/>
+          là 
           <br/>
         </p>
         
