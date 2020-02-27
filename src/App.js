@@ -42,7 +42,7 @@ import Savage_Opress from './Sith/Savage_Opress.jpg';
 import Asajj_Ventress from './Sith/Asajj_Ventress.jpg';
 import Komari_Vosa from './Sith/Komari_Vosa.jpg';
 
-var GREYJEDI  = [
+var GREYJEDI = [
   {
     name: 'Anakin Vader Skywalker Grey Jedi',
     image: Anakin_Vader_Skywalker
@@ -65,7 +65,7 @@ var GREYJEDI  = [
   },
 ]
 
-var JEDI  = [ // JEDI là gì? -> 
+var JEDI = [
   {
     name: 'Anakin Skywalker',
     image: Anakin_Skywalker
@@ -100,7 +100,7 @@ var JEDI  = [ // JEDI là gì? ->
   }
 ]
 
-var SITH  = [
+var SITH = [
   {
     name: 'Darth Vader Sith',
     image: Darth_Vader

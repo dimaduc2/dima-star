@@ -19,38 +19,61 @@ class Admin extends Component {
   }
 
 //Phần 3: các Function
-
   choThem = () => {
     const { GREYJEDI, JEDI, SITH } = this.props;
     const { fullname, imagesStarWars, side } = this.state;
-    // alert('3423r')
-    // GREYJEDI.push('1');
-    // JEDI.push('2');
-    // SITH.push('3');
     
-    if (side === 'Jedi') {
-      JEDI.push({name:fullname, image:imagesStarWars})
+// cách 1
+    // if (side === 'Jedi') {
+    //   if(this.state.fullname === "" || this.state.imagesStarWars === ""){
+    //     alert('phải viết đủ 2 ô text')
+    //   }
+    //   else{
+    //     JEDI.push({name:fullname, image:imagesStarWars})
+    //   }
+    // }
+    // else if (side === 'Sith') {
+    //   if(this.state.fullname === "" || this.state.imagesStarWars === ""){
+    //     alert('phải viết đủ 2 ô text')
+    //   }
+    //   else{
+    //     SITH.push({name:fullname, image:imagesStarWars})
+    //   }
+    // }
+    // else if (side === 'GreyJedi') {
+    //   if(this.state.fullname === "" || this.state.imagesStarWars === ""){
+    //     alert('phải viết đủ 2 ô text')
+    //   }
+    //   else{
+    //     GREYJEDI.push({name:fullname, image:imagesStarWars})
+    //   }
+    // }
+    // else {
+    //   alert("Không liên quan đến Side")
+    // }
+    
+// cách 2
+    if(this.state.fullname === "" || this.state.imagesStarWars === "" || this.state.side === ""){
+      alert('phải viết đủ 3 ô text')
     }
-    else if (side === 'Sith') {
-      SITH.push({name:fullname, image:imagesStarWars})
-    }
-    else if (side === 'GreyJedi') {
-      GREYJEDI.push({name:fullname, image:imagesStarWars})
-    }
-    else {
-      alert("Không liên quan đến Side")
-    }
+    else{
+      if (side === 'Jedi') {
+        JEDI.push({name:fullname, image:imagesStarWars})
+      }
+      if (side === 'Sith') {
+        SITH.push({name:fullname, image:imagesStarWars})
+      }
+      if (side === 'GreyJedi') {
+        GREYJEDI.push({name:fullname, image:imagesStarWars})
+      } 
+      alert("đã cho thêm")
 
-    // JEDI.push({name:fullname, image:imagesStarWars})
-    // GREYJEDI.push({name:fullname, image:imagesStarWars})
-    // SITH.push({name:fullname, image:imagesStarWars})
+      this.setState({fullname: ""})
+      this.setState({imagesStarWars: ""})
+    }
+    
     this.forceUpdate()
   }
-
-  // xua = () => {
-  //   JEDI[].name = fullname
-  //   JEDI[].image = imagesStarWars
-  // }
 
   thayDoiSide = (e, { value }) => {
     this.setState({ side: value })
