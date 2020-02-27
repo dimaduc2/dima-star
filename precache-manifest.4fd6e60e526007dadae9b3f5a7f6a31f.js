@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b31e4141a34268a68fa1a47d70492cd4",
+    "revision": "207a0cfc1333796c3a9e400f60c134a5",
     "url": "/dima-star/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/css/2.507930fa.chunk.css"
   },
   {
-    "revision": "08a1a577ae9a840224d9",
+    "revision": "63d4e8df454874885ad1",
     "url": "/dima-star/static/css/main.e8d3177d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/js/2.d44049db.chunk.js"
   },
   {
-    "revision": "08a1a577ae9a840224d9",
-    "url": "/dima-star/static/js/main.a8c92aaa.chunk.js"
+    "revision": "63d4e8df454874885ad1",
+    "url": "/dima-star/static/js/main.49280e1e.chunk.js"
   },
   {
     "revision": "5b654f7d3d12355f9702",
