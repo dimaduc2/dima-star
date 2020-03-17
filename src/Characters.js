@@ -51,7 +51,7 @@ class Characters extends Component {
               {GREYJEDI
                 ? GREYJEDI.map( (moiGREYJEDI, index) =>
                   <div>
-                    <Button onClick={()=>this.props.xoaBotGreyJedi(moiGREYJEDI, index)} color="red">X </Button>
+                    <Button onClick={()=>this.props.xoaBotGreyJedi(moiGREYJEDI, index)} color="red">X</Button>
                     <Button onClick={()=>this.props.xuaGreyJedi(moiGREYJEDI, index)} color="green">!</Button>
                     <Modal trigger={<Image src={moiGREYJEDI.image} size='medium'/>} basic >
                       <Modal.Content>

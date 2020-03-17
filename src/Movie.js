@@ -2,54 +2,8 @@
 import Iframe from 'react-iframe';
 import React, { Component } from 'react'
 import { Dropdown, Grid, Image, Button } from 'semantic-ui-react'
-import KyloRenVSDarthVader from './image movie/KYLO REN VS. DARTH VADER IN REAL LIFE.jpg'
-import RevanStarWarsFanFilm from './image movie/Revan - Star Wars Fan Film (2015).jpg'
-import SkywalkerApprentice from './image movie/SKYWALKER APPRENTICE (2019 Star Wars Fan Film).jpg'
-import StarWarsCloneWars2003 from './image movie/Star Wars Clone Wars 2003 Full SS1 - SS2.jpg'
 
 import './Movie.css';
-
-const danhBaPhimStarWars = [
-  {
-    key: 'StarWarsCloneWars2003FullSS1SS2',
-    value: 0,
-    text: 'Star Wars Clone Wars 2003 Full SS1 - SS2',
-    ten: "Star Wars Clone Wars 2003 Full SS1 - SS2",
-    diaChi: 'https://www.youtube.com/embed/wLdlwZUO5mo',
-    picture: StarWarsCloneWars2003,
-    anhGioiTieu: "https://img.youtube.com/vi/wLdlwZUO5mo/0.jpg" 
-  },
-
-  {
-    key: 'StarWarsFanFilm',
-    value: 1,
-    text: 'Revan - Star Wars Fan Film (2015)',
-    ten: "Revan - Star Wars Fan Film (2015)",
-    diaChi: 'https://www.youtube.com/embed/-DtvTM1Am4I',
-    picture: RevanStarWarsFanFilm,
-    anhGioiTieu: "https://img.youtube.com/vi/-DtvTM1Am4I/2.jpg"
-  },
-  
-  {
-    key: 'SkywalkerApprentice',
-    value: 2,
-    text: 'SKYWALKER APPRENTICE (2019 Star Wars Fan Film)',
-    ten:  'SKYWALKER APPRENTICE (2019 Star Wars Fan Film)',
-    diaChi: 'https://www.youtube.com/embed/7ZfWU-3OL_s',
-    picture: SkywalkerApprentice,
-    anhGioiTieu: "https://img.youtube.com/vi/7ZfWU-3OL_s/2.jpg"
-  },
-
-  {
-    key: 'KyloRenVsDarthVaderInRealLife',
-    value: 3,
-    text: 'KYLO REN VS. DARTH VADER IN REAL LIFE',
-    ten: "KYLO REN VS. DARTH VADER IN REAL LIFE",
-    diaChi: 'https://www.youtube.com/embed/LVYWkkZCC-Y',
-    picture: KyloRenVSDarthVader,
-    anhGioiTieu: "https://img.youtube.com/vi/LVYWkkZCC-Y/0.jpg"
-  },
-]
 
 class Movie extends Component {
 
@@ -69,17 +23,14 @@ class Movie extends Component {
 
   xemPhim = ( soPhimMoi ) => {
     if (this.state.soPhimDangXem === soPhimMoi) {
+            // nếu đang xem phim đấy rồi thì cho chống rỗng vào state để phim biến mất
+
       this.setState({soPhimDangXem: ""})
     }
     else {
-      // nếu đang xem phim thì cho chống rỗng vào state để phim biến mất
       this.setState({soPhimDangXem: soPhimMoi})
     }
   }
-
-  // hienCuaSo = (tenPhim) => {
-  //     alert(tenPhim)
-  // }
 
   hienAnh = ( soAnhMoi ) => {
     this.setState({soAnhDangXem: soAnhMoi})
@@ -107,10 +58,11 @@ class Movie extends Component {
   //4 HTML và Component
   render() {
     const { soPhimDangXem, dangXemAnhGioiThieu, soAnhDangXem, widthPhim, heightPhim } = this.state
-
+    const { danhBaPhimStarWars } = this.props;
     return (
       <div className="Movie">
         <br/><br/><br/><br/><br/>
+
         <Dropdown
           placeholder='phim Star Wars'
           fluid
@@ -152,11 +104,12 @@ class Movie extends Component {
                 {moiPhim.ten}
               </Button>  */}
             
+            <Button onClick={()=>this.props.xoaBotPhim(moiPhim, index)} color="red">X</Button>
               <Button onClick={() => this.xemPhim(index)}
                       onMouseEnter={() => this.hienAnh(index)}
                       onMouseLeave={this.giauAnh}
                 color = {soPhimDangXem === index ? "violet" : "purple" }>
-                <Image src={dangXemAnhGioiThieu && (index === soAnhDangXem)
+                <Image size="massive" src={dangXemAnhGioiThieu && (index === soAnhDangXem)
                   ? danhBaPhimStarWars[index].anhGioiTieu
                   : danhBaPhimStarWars[index].picture
                 } />

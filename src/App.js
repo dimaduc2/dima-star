@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css';
 import { Menu, Image, Dropdown, Checkbox, Icon, Button, Label, Flag } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
 import Gray_Jedi from './Gray_Jedi_(Jedi_&_Sith)_symbol.png';
 import Symbol_Jedi from './Symbol Jedi.png';
 import Symbol_Sith from './Symbol Sith.png';
@@ -18,7 +19,6 @@ import Admin from './Admin';
 import About from './About';
 
 import ScrollableAnchor from 'react-scrollable-anchor'
-
 
 import Anakin_Vader_Skywalker from './Grey Jedi/Anakin_Vader_Skywalker.jpg';
 import Jolee_Bindo from './Grey Jedi/Jolee_Bindo.jpg';
@@ -41,6 +41,53 @@ import Darth_Maul from './Sith/Darth_Maul.jpg';
 import Savage_Opress from './Sith/Savage_Opress.jpg';
 import Asajj_Ventress from './Sith/Asajj_Ventress.jpg';
 import Komari_Vosa from './Sith/Komari_Vosa.jpg';
+
+import KyloRenVSDarthVader from './image movie/KYLO REN VS. DARTH VADER IN REAL LIFE.jpg'
+import RevanStarWarsFanFilm from './image movie/Revan - Star Wars Fan Film (2015).jpg'
+import SkywalkerApprentice from './image movie/SKYWALKER APPRENTICE (2019 Star Wars Fan Film).jpg'
+import StarWarsCloneWars2003 from './image movie/Star Wars Clone Wars 2003 Full SS1 - SS2.jpg'
+
+const danhBaPhimStarWars = [
+  {
+    key: 'StarWarsCloneWars2003FullSS1SS2',
+    value: 0,
+    text: 'Star Wars Clone Wars 2003 Full SS1 - SS2',
+    ten: "Star Wars Clone Wars 2003 Full SS1 - SS2",
+    diaChi: 'https://www.youtube.com/embed/wLdlwZUO5mo',
+    picture: StarWarsCloneWars2003,
+    anhGioiTieu: "https://img.youtube.com/vi/wLdlwZUO5mo/0.jpg" 
+  },
+
+  {
+    key: 'StarWarsFanFilm',
+    value: 1,
+    text: 'Revan - Star Wars Fan Film (2015)',
+    ten: "Revan - Star Wars Fan Film (2015)",
+    diaChi: 'https://www.youtube.com/embed/-DtvTM1Am4I',
+    picture: RevanStarWarsFanFilm,
+    anhGioiTieu: "https://img.youtube.com/vi/-DtvTM1Am4I/2.jpg"
+  },
+  
+  {
+    key: 'SkywalkerApprentice',
+    value: 2,
+    text: 'SKYWALKER APPRENTICE (2019 Star Wars Fan Film)',
+    ten:  'SKYWALKER APPRENTICE (2019 Star Wars Fan Film)',
+    diaChi: 'https://www.youtube.com/embed/7ZfWU-3OL_s',
+    picture: SkywalkerApprentice,
+    anhGioiTieu: "https://img.youtube.com/vi/7ZfWU-3OL_s/2.jpg"
+  },
+
+  {
+    key: 'KyloRenVsDarthVaderInRealLife',
+    value: 3,
+    text: 'KYLO REN VS. DARTH VADER IN REAL LIFE',
+    ten: "KYLO REN VS. DARTH VADER IN REAL LIFE",
+    diaChi: 'https://www.youtube.com/embed/LVYWkkZCC-Y',
+    picture: KyloRenVSDarthVader,
+    anhGioiTieu: "https://img.youtube.com/vi/LVYWkkZCC-Y/0.jpg"
+  },
+]
 
 var GREYJEDI = [
   {
@@ -178,7 +225,6 @@ class App extends Component {
   //   }
   // }
 
-
   // xoaBotSith = (moiSITH) => {
   //   var coXoaHayKhong = window.confirm("có xóa " + moiSITH + " không?");
   //   if (coXoaHayKhong === true){
@@ -187,7 +233,14 @@ class App extends Component {
   //   }
   // }
 
-  
+  xoaBotPhim = (moiPhim, index) => {
+    var coXoaPhimHayKhong = window.confirm("có xóa " + moiPhim.ten + " không?");
+    if(coXoaPhimHayKhong === true){
+      danhBaPhimStarWars.splice(index, 1)
+      this.forceUpdate()
+    }
+  }
+
   xoaBotJedi = (moiJEDI, index) => {
     var coXoaHayKhong = window.confirm("có xóa " + moiJEDI.name + " không?");
     if(coXoaHayKhong === true){
@@ -203,7 +256,6 @@ class App extends Component {
       this.forceUpdate()
     }
   }
-
   xoaBotSith = (moiSITH, index) => {
     var coXoaHayKhong = window.confirm("có xóa " + moiSITH.name + " không?");
     if(coXoaHayKhong === true){
@@ -253,7 +305,6 @@ class App extends Component {
     }
     this.forceUpdate()
   }
-
 
   //4 HTML và Component
   render() {
@@ -595,17 +646,15 @@ class App extends Component {
           <Route path = "/Characters" render={() => <Characters  GREYJEDI={GREYJEDI} JEDI={JEDI} SITH={SITH} 
                                   xoaBotGreyJedi={this.xoaBotGreyJedi} xoaBotJedi={this.xoaBotJedi} xoaBotSith={this.xoaBotSith}
                                   xuaGreyJedi={this.xuaGreyJedi} xuaJedi={this.xuaJedi} xuaSith={this.xuaSith}
-                                  
-                                  
-                                  
-                                  
                                   />} />
-          <Route path = "/Movie" component = {Movie} />
+
+          <Route path = "/Movie" render={() => <Movie danhBaPhimStarWars={danhBaPhimStarWars} xoaBotPhim={this.xoaBotPhim} />} />
           <Route path = "/Comic" component = {Comic} />
           <Route path = "/Anakin_Side" component = {Anakin_Side} />
           <Route path = "/Robot" component = {Robot} />
           <Route path = "/About" component = {About} />
-          <Route path = "/Admin" render={() => <Admin GREYJEDI={GREYJEDI} JEDI={JEDI} SITH={SITH} />} />
+          <Route path = "/Admin" render={() => <Admin GREYJEDI={GREYJEDI} JEDI={JEDI} SITH={SITH} 
+                                                      danhBaPhimStarWars={danhBaPhimStarWars} />} />
 
           <header className="App-header">
             <img src={Gray_Jedi} className="App-logo" alt="logo" />
