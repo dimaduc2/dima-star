@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54f2a362487db679162f19da123f1d55",
+    "revision": "25829bf5137f042766a1f1c295bdb849",
     "url": "/dima-star/index.html"
   },
   {
-    "revision": "44b702f17bbcf285a105",
+    "revision": "1d5a1b5998677c4e2772",
     "url": "/dima-star/static/css/2.507930fa.chunk.css"
   },
   {
-    "revision": "0017a628a71281c10e35",
-    "url": "/dima-star/static/css/main.e7fb86b7.chunk.css"
+    "revision": "3f746a735ceed61e3f83",
+    "url": "/dima-star/static/css/main.27eae790.chunk.css"
   },
   {
-    "revision": "44b702f17bbcf285a105",
-    "url": "/dima-star/static/js/2.4e6f10ab.chunk.js"
+    "revision": "1d5a1b5998677c4e2772",
+    "url": "/dima-star/static/js/2.932d8d65.chunk.js"
   },
   {
-    "revision": "0017a628a71281c10e35",
-    "url": "/dima-star/static/js/main.cff89c85.chunk.js"
+    "revision": "3f746a735ceed61e3f83",
+    "url": "/dima-star/static/js/main.3ddbc8d4.chunk.js"
   },
   {
     "revision": "5b654f7d3d12355f9702",
@@ -108,6 +108,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/media/G7-68 (The Sith Apprentice) (for 0-0-0 or Triple-Zero).3ede0173.jpg"
   },
   {
+    "revision": "d3fc372ff9cba87544f7e1213da9422b",
+    "url": "/dima-star/static/media/G8-R3.d3fc372f.jpg"
+  },
+  {
     "revision": "3c6104063323e6c4fb2b2adab4c6884e",
     "url": "/dima-star/static/media/Galen_Marek_(Starkiller).3c610406.jpg"
   },
@@ -126,6 +130,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e7c6cbd61084a5ee6319362035fc1c1",
     "url": "/dima-star/static/media/ID10 seeker droid x3.0e7c6cbd.jpg"
+  },
+  {
+    "revision": "4fe08ecadb55167d9de12eaf6c970505",
+    "url": "/dima-star/static/media/IG Assassin.4fe08eca.jpg"
   },
   {
     "revision": "2bbda06388c48f621cfb234a4ebcab3d",
@@ -196,8 +204,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dima-star/static/media/R1-G4 (The Dark Lord of Naboo).d89017d5.jpg"
   },
   {
+    "revision": "db413e43a01ea408c2035c4a4ffa8be3",
+    "url": "/dima-star/static/media/R2-B1.db413e43.jpg"
+  },
+  {
     "revision": "fc7759c0d7ca3b331dde476bc4b5737f",
     "url": "/dima-star/static/media/R2-D2 (Artoo-Detoo) (call Artoo).fc7759c0.jpg"
+  },
+  {
+    "revision": "28889b2fb3593632b9c8bf4a3a99c78f",
+    "url": "/dima-star/static/media/R2-M5.28889b2f.jpg"
+  },
+  {
+    "revision": "f1035aee15ef1527bae055560e8d9015",
+    "url": "/dima-star/static/media/R2-N3.f1035aee.jpg"
+  },
+  {
+    "revision": "54b4bb106a17186c5c841a3b4a1bf40f",
+    "url": "/dima-star/static/media/R2-R9.54b4bb10.jpg"
   },
   {
     "revision": "5634022c31cb0e41bdca69c99e4ae80a",
