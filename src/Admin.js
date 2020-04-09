@@ -116,6 +116,13 @@ class Admin extends Component {
     this.setState({imagesStarWars: value})
   }
 
+  HienThongTinPhim = () => {
+    this.setState({dangHienAnh: false})
+  }
+  HienThongTinAnh = () => {
+    this.setState({dangHienAnh: true})
+  }
+  
   render() {
     const { fullname, side, imagesStarWars, dangHienAnh, themPhim } = this.state
     const { GREYJEDI, JEDI, SITH } = this.props;
@@ -124,19 +131,17 @@ class Admin extends Component {
       
       <div className="Admin">
         <br/><br/><br/><br/>
-        
         <Button 
         // primary={dangHienAnh===false} 
         color={dangHienAnh===false ? 'red' : 'grey'} 
-        onClick={this.thongTinPhim}>thông tin phim</Button>
+        onClick={this.HienThongTinPhim}>thông tin phim</Button>
         <Button 
         // primary={dangHienAnh===true} 
         color={dangHienAnh===true ? 'red' : 'grey'} 
-        onClick={this.thongTinAnh}>thông tin ảnh</Button>
+        onClick={this.HienThongTinAnh}>thông tin ảnh</Button>
         <br/><br/>
 
         {dangHienAnh === true
-
           ? <span>
               <Form inverted>
                 <Form.Dropdown inline label='Sides' 
@@ -170,7 +175,6 @@ class Admin extends Component {
                   onChange={this.thayDoiAnh}
                   />
 
-
               </Form>
                 <br/><br/>
               <Button onClick={this.choThemAnh} color="blue">Submit Anh</Button>
@@ -194,7 +198,6 @@ class Admin extends Component {
             <Button onClick={this.choThemPhim} color="blue">Submit Phim</Button>
             </span>
         }
-
         <br/>
       </div>
     )

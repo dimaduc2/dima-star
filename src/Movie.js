@@ -15,24 +15,34 @@ class Movie extends Component {
     widthPhim: '450px',
     heightPhim: '250px'
   }
-
-  // Phần 3: các Function  
+  
+  // Phần 3: các Function
   chonPhim  = (e, {value}) => {
     this.setState({soPhimDangXem: value })
   }
-
-  xemPhim = ( soPhimMoi ) => {
-    if (this.state.soPhimDangXem === soPhimMoi) {
-            // nếu đang xem phim đấy rồi thì cho chống rỗng vào state để phim biến mất
-
+  xemPhim = (soPhimMoi) => {
+    if (this.state.soPhimDangXem === soPhimMoi) {   // nếu đang xem phim đấy rồi thì cho chống rỗng vào state để phim biến mất
       this.setState({soPhimDangXem: ""})
     }
     else {
       this.setState({soPhimDangXem: soPhimMoi})
     }
   }
+  xoaBotPhim = (moiPhim, index) => {
+    var coXoaPhimHayKhong = window.confirm("có xóa " + moiPhim.ten + " không?");
+    if(coXoaPhimHayKhong === true){
+      this.setState({soPhimDangXem: ""})
+      this.props.danhBaPhimStarWars.splice(index, 1)
 
-  hienAnh = ( soAnhMoi ) => {
+      for(var i = index; i < this.props.danhBaPhimStarWars.length; i++){
+        this.props.danhBaPhimStarWars[i].value = i
+      }
+
+      this.forceUpdate()
+    }
+  }
+
+  hienAnh = (soAnhMoi) => {
     this.setState({soAnhDangXem: soAnhMoi})
     this.setState({dangXemAnhGioiThieu: true})
   }
@@ -63,14 +73,26 @@ class Movie extends Component {
       <div className="Movie">
         <br/><br/><br/><br/><br/>
 
+
+        
+
         <Dropdown
           placeholder='phim Star Wars'
           fluid
           selection
           options={danhBaPhimStarWars}
           onChange={this.chonPhim}
+
+
+
         /><br/><br/>
         
+
+
+
+
+
+
         {soPhimDangXem === ''
           ? null
           : <Iframe  url={danhBaPhimStarWars[soPhimDangXem].diaChi}
@@ -104,7 +126,7 @@ class Movie extends Component {
                 {moiPhim.ten}
               </Button>  */}
             
-            <Button onClick={()=>this.props.xoaBotPhim(moiPhim, index)} color="red">X</Button>
+            <Button onClick={()=>this.xoaBotPhim(moiPhim, index)} color="red">X</Button>
               <Button onClick={() => this.xemPhim(index)}
                       onMouseEnter={() => this.hienAnh(index)}
                       onMouseLeave={this.giauAnh}

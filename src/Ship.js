@@ -11,7 +11,9 @@ import Ginivex_Class_Starfighter from './Ship/Ginivex-Class Starfighter.jpg';
 import Eta_2_yellow from './Ship/Eta-2 yellow for R2-D2.jpg';
 import Eta_2_green from './Ship/Eta-2 green for R2-D2.jpg';
 
-import { Image, Modal, Grid } from 'semantic-ui-react'
+import { Image, Modal, Grid, Button } from 'semantic-ui-react'
+
+import './Ship.css';
 
 const SHIP  = [
   {
@@ -50,34 +52,71 @@ const SHIP  = [
     name: 'Ginivex-Class Starfighter (for Asajj)',
     image: Ginivex_Class_Starfighter
   },
-  
 ]
 
 //import './Compare.css';
 
 class Weapons extends Component {
 
-//Phần 2: các State
-  state = {}
+  //Phần 2: các State
+    state = {
+      thongTinAnh: '',
+      phongTo: false,
+      soAnhDangXem: ''
+    }
 
-//Phần 3: các Function
+  //Phần 3: các Function
+
+  anhTroVe = () => {
+    if(this.state.soAnhDangXem > 0){
+      this.setState({thongTinAnh: SHIP[this.state.soAnhDangXem-1].image})
+      this.setState({soAnhDangXem: this.state.soAnhDangXem-1})
+    }
+    else{
+      alert("không trở lại tiếp được")
+    }
+  }
+  anhTiepTheo = () => {
+    if(this.state.soAnhDangXem < SHIP.length-1){
+      this.setState({thongTinAnh: SHIP[this.state.soAnhDangXem+1].image})
+      this.setState({soAnhDangXem: this.state.soAnhDangXem+1})
+    }
+    else{
+      alert("không thể tiếp theo được")
+    }
+  }
+  phongToRa = (index) => {
+    this.setState({thongTinAnh: SHIP[index].image, phongTo: true})
+    this.setState({soAnhDangXem: index})
+  }
+  phongNhoLai = () => {
+    this.setState({phongTo: false})
+    this.setState({soAnhDangXem: ''})
+  }
 
   render() {
-    //const {  } = this.state
-
+    const { thongTinAnh } = this.state
     return (
       <div className="Weapons" align="center">
         <br/><br/><br/><br/><br/>
-        <h1>Anakin's Ship</h1>
+        <h1>Anakin's Ship {this.state.soAnhDangXem}</h1>
         <br/>
+        {this.state.phongTo === true
+          ? <div>
+              <Button circular icon='angle left' onClick={() => this.anhTroVe()} className="nutBamTroVe"></Button>
+              <Button circular icon='angle right' onClick={() => this.anhTiepTheo()} className="nutBamTiepTheo"></Button>
+            </div>
+          : null
+        }
+        <Modal basic open={this.state.phongTo} onClose={this.phongNhoLai}>
+          <Modal.Content align='center'>
+            <Image src={thongTinAnh} size='bigmassive' />  
+          </Modal.Content>
+        </Modal>
         <Grid columns={3} textAlign="center">
           { SHIP.map( (moiSHIP, index) =>
-            <div>
-              <Modal trigger={<Image src={moiSHIP.image} size='medium'/>} basic >
-                <Modal.Content>
-                  <Image src={moiSHIP.image} size='bigmassive'/>
-                </Modal.Content>
-              </Modal>
+            <div>{index}
+              <Image src={moiSHIP.image} size='medium' onClick={() => this.phongToRa(index)} />
               <br/>
               {moiSHIP.name}
               <br/><br/><br/><br/>
@@ -85,29 +124,6 @@ class Weapons extends Component {
             )
           }
         </Grid>
-
-        {/* <Image src={Sith_Dreadnought_Class} size='medium' />
-        <br/>
-        <p>Sith Dreadnought-Class (Leviathan)</p>
-        <br/><br/>
-        <Image src={Kappa_Class} size='medium' />
-        <br/>
-        <p>Kappa-Class (Susanoo)</p>
-        <br/><br/>
-        <Image src={Sith_Infiltrator} size='medium' />
-        <br/>
-        <p>Sith Infiltrator</p>
-        <br/><br/>
-        <Image src={Azure_Angel} size='medium' />
-        <p>Azure Angel for R4-P22</p>
-        <br/><br/>
-        <Image src={Delta_7B} size='medium' />
-        <p>Delta-7B for R2-D2</p>
-        <br/><br/>
-        <Image src={Eta_2} size='medium' />
-        <p>Eta-2 for R2-D2</p>
-        <br/> */}
-        
       </div>
     )
   }

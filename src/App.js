@@ -53,9 +53,9 @@ const danhBaPhimStarWars = [
     value: 0,
     text: 'Star Wars Clone Wars 2003 Full SS1 - SS2',
     ten: "Star Wars Clone Wars 2003 Full SS1 - SS2",
-    diaChi: 'https://www.youtube.com/embed/wLdlwZUO5mo',
+    diaChi: 'https://www.youtube.com/embed/5FBNbvF4OGo',
     picture: StarWarsCloneWars2003,
-    anhGioiTieu: "https://img.youtube.com/vi/wLdlwZUO5mo/0.jpg" 
+    anhGioiTieu: "https://img.youtube.com/vi/5FBNbvF4OGo/0.jpg" 
   },
 
   {
@@ -153,7 +153,7 @@ var SITH = [
     image: Darth_Vader
   },
   {
-    name: 'Lady Padme',
+    name: 'Lady Padme Amidala',
     image: Sith_Padme
   },
   {
@@ -179,6 +179,7 @@ class App extends Component {
   //2 State
   state = {
     // dangXemGi: "dangXemHome",
+    soPhimDangXem: '',
     activeItem: "",
     side: 'grey jedi',
     language: 'en'
@@ -233,13 +234,12 @@ class App extends Component {
   //   }
   // }
 
-  xoaBotPhim = (moiPhim, index) => {
-    var coXoaPhimHayKhong = window.confirm("có xóa " + moiPhim.ten + " không?");
-    if(coXoaPhimHayKhong === true){
-      danhBaPhimStarWars.splice(index, 1)
-      this.forceUpdate()
-    }
-  }
+
+
+  
+
+
+
 
   xoaBotJedi = (moiJEDI, index) => {
     var coXoaHayKhong = window.confirm("có xóa " + moiJEDI.name + " không?");
@@ -648,7 +648,7 @@ class App extends Component {
                                   xuaGreyJedi={this.xuaGreyJedi} xuaJedi={this.xuaJedi} xuaSith={this.xuaSith}
                                   />} />
 
-          <Route path = "/Movie" render={() => <Movie danhBaPhimStarWars={danhBaPhimStarWars} xoaBotPhim={this.xoaBotPhim} />} />
+          <Route path = "/Movie" render={() => <Movie danhBaPhimStarWars={danhBaPhimStarWars} soPhimDangXem={this.state.soPhimDangXem} />} />
           <Route path = "/Comic" component = {Comic} />
           <Route path = "/Anakin_Side" component = {Anakin_Side} />
           <Route path = "/Robot" component = {Robot} />

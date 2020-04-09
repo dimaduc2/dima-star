@@ -4,7 +4,7 @@
 //Phần 1: các Import
 import React, { Component } from 'react'
 import './App.css';
-import { Grid, Image, Modal } from 'semantic-ui-react';
+import { Grid, Image, Modal, Button } from 'semantic-ui-react';
 
 import Iron_Vader from './Anakin Droid/Iron Vader (for BT-1).jpg';
 import ASP_7 from './Anakin Droid/ASP-7 x10 (The Dark Lord of Naboo).jpg';
@@ -20,10 +20,18 @@ import Model_88 from './Anakin Droid/Model-88 or M88-AD (The Dark Lord of Naboo)
 import PROXY from './Anakin Droid/PROXY.jpg';
 import R1_G4 from './Anakin Droid/R1-G4 (The Dark Lord of Naboo).jpg';
 import R2_D2 from './Anakin Droid/R2-D2 (Artoo-Detoo) (call Artoo).jpg';
+import G8_R3 from './Anakin Droid/G8-R3.jpg';
+import R2_B1 from './Anakin Droid/R2-B1.jpg';
+import R2_M5 from './Anakin Droid/R2-M5.jpg';
+import R2_N3 from './Anakin Droid/R2-N3.jpg';
+import R2_R9 from './Anakin Droid/R2-R9.jpg';
 import R4_P22 from './Anakin Droid/R4-P22 (R4-G4).jpg';
 import R4_P44 from './Anakin Droid/R4-P44 (Petey).jpg';
 import DRK_1 from './Anakin Droid/DRK-1 x3 (Sith Probe Droid SFB).jpg';
 import ID_10 from './Anakin Droid/ID10 seeker droid x3.jpg';
+import IG_Assassin from './Anakin Droid/IG Assassin.jpg';
+
+import './Robot.css';
 
 const Droid = [
   {
@@ -79,6 +87,26 @@ const Droid = [
     image: R2_D2
   }, 
   {
+    name: 'G8-R3',
+    image: G8_R3
+  }, 
+  {
+    name: 'R2-B1',
+    image: R2_B1
+  }, 
+  {
+    name: 'R2-M5',
+    image: R2_M5
+  }, 
+  {
+    name: 'R2-N3',
+    image: R2_N3
+  }, 
+  {
+    name: 'R2-R9',
+    image: R2_R9
+  }, 
+  {
     name: 'Cam',
     image: Cam
   }, 
@@ -97,34 +125,74 @@ const Droid = [
   {
     name: 'ID10 x3 (for Seventh Sister ID9)',
     image: ID_10
+  },
+  {
+    name: 'IG Assassin',
+    image: IG_Assassin
   }
 ]
 
 
 class Robot extends Component {
 
-//Phần 2: các State
-  state = {}
+  //Phần 2: các State
+    state = {
+      phongTo: false,
+      soAnhDangXem: 0
+    }
 
-//Phần 3: các Function
+  //Phần 3: các Function
+  anhTroVe = () => {
+    if(this.state.soAnhDangXem > 0){
+      this.setState({thongTinAnh: Droid[this.state.soAnhDangXem-1].image})
+      this.setState({soAnhDangXem: this.state.soAnhDangXem-1})
+    }
+    else{
+      alert("không trở lại tiếp được")
+    }
+  }
+  anhTiepTheo = () => {
+    if(this.state.soAnhDangXem < Droid.length-1){
+      this.setState({thongTinAnh: Droid[this.state.soAnhDangXem+1].image})
+      this.setState({soAnhDangXem: this.state.soAnhDangXem+1})
+    }
+    else{
+      alert("không thể tiếp theo được")
+    }
+  }
+  phongToRa = (index) => {
+    this.setState({thongTinAnh: Droid[index].image, phongTo: true})
+    this.setState({soAnhDangXem: index})
+  }
+  phongNhoLai = () => {
+    this.setState({phongTo: false})
+    this.setState({soAnhDangXem: ''})
+  }
 
   render() {
-    //const {  } = this.state
-
+    const { thongTinAnh } = this.state
     return (
-      <div className="Robot" textAlign='center'>
+      <div className="Robot" textAlign='center' style={{marginLeft: '80px', marginRight: '80px'}}>
         <p>
           <br/><br/><br/><br/>
-          <h1>Anakin's 31 droid</h1>
+          <h1>Anakin's 36 droid {this.state.soAnhDangXem}</h1>
           <br/>
+          {this.state.phongTo === true
+            ? <div>
+              <Button circular icon='angle left' onClick={() => this.anhTroVe()} className="nutBamTroVe"></Button>
+              <Button circular icon='angle right' onClick={() => this.anhTiepTheo()} className="nutBamTiepTheo"></Button>
+              </div>
+            : null
+          }
+          <Modal basic open={this.state.phongTo} onClose={this.phongNhoLai}>
+            <Modal.Content align='center'>
+              <Image src={thongTinAnh} size='big' />
+            </Modal.Content>
+          </Modal>
           <Grid columns={3} divided>
             { Droid.map( (moiRobot, index) =>
-              <div>
-                <Modal trigger={<Image src={moiRobot.image} size='medium'/>} basic >
-                  <Modal.Content>
-                    <Image src={moiRobot.image} size='big'/>
-                  </Modal.Content>
-                </Modal>
+              <div>{index}
+                <Image src={moiRobot.image} size='small' onClick={() => this.phongToRa(index)} />
                 <br/>
                 {moiRobot.name}
               </div>

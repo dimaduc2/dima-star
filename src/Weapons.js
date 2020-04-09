@@ -13,58 +13,120 @@ import DC_17 from './weapon/DC-17 Blaster Pistol.jpg';
 import WESTAR_M5 from './weapon/WESTAR-M5 Blaster Rifle.jpg';
 
 
-
-import { Image } from 'semantic-ui-react'
+import { Image, Modal, Button, Grid } from 'semantic-ui-react'
 
 //import './Compare.css';
+
+const WEAPONS = [
+  {
+    name: "Lightsaber Krayt Dragon",
+    image: LightsaberKrayt
+  },
+  {
+    name: "Westar-34",
+    image: Westar34
+  },
+  {
+    name: "Westar-35",
+    image: Westar35
+  },
+  {
+    name: "Lightsabers",
+    image: Lightsabers
+  },
+  {
+    name: "Lightsaber Double Bladed",
+    image: LightsaberDouble
+  },
+  {
+    name: "DC-15A (Clone Trooper)",
+    image: DC_15A
+  },
+  {
+    name: "DC-15S (Clone Trooper)",
+    image: DC_15S
+  },
+  {
+    name: "DC-17 (Clone Trooper Commander)",
+    image: DC_17
+  },
+  {
+    name: "WESTAR-M5 (Clone Trooper ARC)",
+    image: WESTAR_M5
+  },
+]
+
 
 class Weapons extends Component {
 
 //Phần 2: các State
-  state = {}
+  state = {
+    thongTinAnh: '',
+    phongTo: false,
+    soAnhDangXem: ''
+  }
 
 //Phần 3: các Function
 
+  anhTroVe = () => {
+    if(this.state.soAnhDangXem > 0){
+      this.setState({thongTinAnh: WEAPONS[this.state.soAnhDangXem-1].image})
+      this.setState({soAnhDangXem: this.state.soAnhDangXem-1})
+    }
+    else{
+      alert("không trở lại tiếp được")
+    }
+  }
+  anhTiepTheo = () => {
+    if(this.state.soAnhDangXem < WEAPONS.length-1){
+      this.setState({thongTinAnh: WEAPONS[this.state.soAnhDangXem+1].image})
+      this.setState({soAnhDangXem: this.state.soAnhDangXem+1})
+    }
+    else{
+      alert("không thể tiếp theo được")
+    }
+  }
+  phongToRa = (index) => {
+    this.setState({thongTinAnh: WEAPONS[index].image, phongTo: true})
+    this.setState({soAnhDangXem: index})
+  }
+  phongNhoLai = () => {
+    this.setState({phongTo: false})
+    this.setState({soAnhDangXem: ''})
+  }
   render() {
-    //const {  } = this.state
+    const { thongTinAnh } = this.state
 
     return (
       <div className="Weapons" align="center">
         <br/><br/><br/><br/><br/>
-        <h1>Anakin's weapons</h1>
+        <h1>Anakin's weapons {this.state.soAnhDangXem}</h1>
         <br/>
-        <Image src={LightsaberKrayt} size='medium' />
+        {this.state.phongTo === true
+          ? <div>
+              <Button circular icon='angle left' onClick={() => this.anhTroVe()} className="nutBamTroVe"></Button>
+              <Button circular icon='angle right' onClick={() => this.anhTiepTheo()} className="nutBamTiepTheo"></Button>
+            </div>
+          : null
+        }
+        <Modal basic open={this.state.phongTo} onClose={this.phongNhoLai}>
+          <Modal.Content align='center'>
+            <Image src={thongTinAnh} size='bigmassive' />  
+          </Modal.Content>
+        </Modal>
+
+        <Grid columns={3} textAlign="center">
+          { WEAPONS.map( (moiWEAPONS, index) =>
+            <div>{index}
+              <Image src={moiWEAPONS.image} size='medium' onClick={() => this.phongToRa(index)} />
+              <br/>
+              {moiWEAPONS.name}
+              <br/><br/><br/><br/>
+            </div>
+            )
+          }
+        </Grid>
         <br/>
-        <p>Lightsaber Krayt Dragon</p>
-        <br/><br/>
-        <Image src={Westar34} size='medium' />
-        <br/>
-        <p>Westar-34</p>
-        <br/><br/>
-        <Image src={Westar35} size='medium' />
-        <br/>
-        <p>Westar-35</p>
-        <br/><br/>
-        <Image src={Lightsabers} size='medium' />
-        <br/>
-        <p>Lightsabers</p>
-        <br/><br/>
-        <Image src={LightsaberDouble} size='medium' />
-        <p>Lightsaber Double Bladed</p>
-        <br/><br/>
-        <Image src={DC_15A} size='medium' />
-        <p>DC-15A (Clone Trooper)</p>
-        <br/><br/>
-        <Image src={DC_15S} size='medium' />
-        <p>DC-15S (Clone Trooper)</p>
-        <br/><br/>
-        <Image src={DC_17} size='medium' />
-        <p>DC-17 (Clone Trooper Commander)</p>
-        <br/><br/>
-        <Image src={WESTAR_M5} size='medium' />
-        <p>WESTAR-M5 (Clone Trooper ARC)</p>
-        <br/>
-        
       </div>
     )
   }
